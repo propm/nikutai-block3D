@@ -428,7 +428,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a80cc8bb95236e845be57627426810a3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1826,7 +1826,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
-  m_Color: {r: 0.8897059, g: 0.7668448, b: 0.431769, a: 1}
+  m_Color: {r: 0.5294118, g: 0.4918137, b: 0.38927338, a: 0.247}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
