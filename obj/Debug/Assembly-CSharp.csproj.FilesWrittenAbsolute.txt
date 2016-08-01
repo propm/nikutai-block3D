@@ -1,0 +1,17 @@
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/UnityEngine.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/UnityEditor.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Mono.Cecil.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Unity.DataContract.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/gen_ty/Repositories/nikutai-block3D/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/gen_ty/Repositories/nikutai-block3D/obj/Debug/Assembly-CSharp.dll
+/Users/gen_ty/Repositories/nikutai-block3D/obj/Debug/Assembly-CSharp.dll.mdb

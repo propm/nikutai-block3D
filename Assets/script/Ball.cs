@@ -28,5 +28,13 @@ public class Ball : MonoBehaviour
             rb.isKinematic = false;
             rb.AddForce(new Vector3(ballInitialVelocity*2, 0, ballInitialVelocity*2));
         }
+
     }
+	void OnCollisionEnter(Collision collision) {
+		//衝突判定
+		if (collision.gameObject.tag == "Ball") {
+			//相手のタグがBallならば、自分を消す
+			Destroy (this.gameObject);
+		}
+	}
 }
