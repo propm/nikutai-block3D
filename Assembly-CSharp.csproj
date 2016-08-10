@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\script\Ball.cs" />
      <Compile Include="Assets\script\Block.cs" />
+     <Compile Include="Assets\script\BlockControl.cs" />
      <Compile Include="Assets\script\Paddle.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
