@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Paddle.cs">
     <Files>
-      <File FileName="Assets/script/Ball.cs" Line="30" Column="10" />
-      <File FileName="Assets/script/Paddle.cs" Line="16" Column="40" />
       <File FileName="Assets/script/Block.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Ball.cs" Line="30" Column="10" />
+      <File FileName="Assets/script/Paddle.cs" Line="15" Column="48" />
+      <File FileName="Assets/script/BlockControl.cs" Line="11" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
             transform.parent = null;
             ballInPlay = true;
             rb.isKinematic = false;
-            rb.AddForce(new Vector3(ballInitialVelocity*2, 0, ballInitialVelocity*2));
+			rb.AddForce(new Vector3(ballInitialVelocity*2, 0, ballInitialVelocity*(-2)));
         }
 
     }
