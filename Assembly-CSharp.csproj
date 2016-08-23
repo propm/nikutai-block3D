@@ -49,6 +49,7 @@
      <Compile Include="Assets\script\Block.cs" />
      <Compile Include="Assets\script\BlockMaker.cs" />
      <Compile Include="Assets\script\BlockReader.cs" />
+     <Compile Include="Assets\script\FeverJudge.cs" />
      <Compile Include="Assets\script\MainGameData.cs" />
      <Compile Include="Assets\script\Paddle.cs" />
      <Compile Include="Assets\script\ScoreView.cs" />

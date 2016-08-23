@@ -17,6 +17,9 @@ public class Block : MonoBehaviour {
 		if (collision.gameObject.tag == "Ball") {
 			//相手のタグがBallならば、自分を消す
 			MainGameData.SetScore(MainGameData.GetScore()+AddScore); 
+			if (MainGameData.GetisFever () == false) {
+				MainGameData.SetFever (MainGameData.GetFever () + 4);
+			}
 			Destroy(this.gameObject);
 		}
 	}
