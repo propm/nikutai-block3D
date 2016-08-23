@@ -14,10 +14,10 @@ public class FeverJudge : MonoBehaviour {
 	}
 
 	void Update () {
-		count = Time.deltaTime;
+		count += Time.deltaTime;
 
 		//時間経過によるフィーバーゲージの減算処理
-		if(count >= 1 && MainGameData.GetisFever() == false){
+		if(count >= 1 && MainGameData.GetisFever() == false && MainGameData.GetFever() >= 1){
 			MainGameData.SetFever (MainGameData.GetFever () - redFever);
 			count = 0;
 			Debug.Log (MainGameData.GetFever ());
@@ -31,11 +31,11 @@ public class FeverJudge : MonoBehaviour {
 
 		//フィーバーの継続処理
 		if (MainGameData.GetisFever () == true) {
-			FeverCount = Time.deltaTime;
+			FeverCount += Time.deltaTime;
 			Debug.Log ("true");
-			if (FeverCount >= FeverTime) {
-				MainGameData.SetisFever (false);
-			}
+		}
+		if (FeverCount >= FeverTime) {
+			MainGameData.SetisFever (false);
 		}
 
 	}
