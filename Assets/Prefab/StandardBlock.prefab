@@ -88,6 +88,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab03540b1dfac434caff753a3ce7b98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AddScore: 500
+  FeverAddScore: 750
+  thisBlock: {fileID: 160504}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
