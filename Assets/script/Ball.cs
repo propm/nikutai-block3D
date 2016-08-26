@@ -12,7 +12,7 @@ public class Ball : MonoBehaviour
     private Rigidbody rb;
     private bool ballInPlay;
 
-    void Awake()
+    void Start()
     {
 
         rb = GetComponent<Rigidbody>();
@@ -21,10 +21,11 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
+		ballInPlay = MainGameData.GetBallInPlay();
         if (Input.GetButtonDown("Fire1") && ballInPlay == false)
         {
             transform.parent = null;
-            ballInPlay = true;
+			MainGameData.SetBallInPlay (true);
             rb.isKinematic = false;
 			rb.AddForce(new Vector3(ballInitialVelocity*2, 0, ballInitialVelocity*(-2)));
         }
