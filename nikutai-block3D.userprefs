@@ -1,12 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/FeverJudge.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Ball.cs">
     <Files>
-      <File FileName="Assets/script/FeverJudge.cs" Line="20" Column="86" />
-      <File FileName="Assets/script/Block.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Ball.cs" Line="1" Column="1" />
+      <File FileName="Assets/data/1.csv" Line="1" Column="1" />
+      <File FileName="Assets/script/FeverJudge.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Block.cs" Line="38" Column="55" />
+      <File FileName="Assets/script/Ball.cs" Line="24" Column="44" />
       <File FileName="Assets/script/Paddle.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/MainGameData.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/MainGameData.cs" Line="44" Column="3" />
+      <File FileName="Assets/script/ScoreView.cs" Line="16" Column="2" />
+      <File FileName="Assets/script/FeverView.cs" Line="23" Column="4" />
+      <File FileName="Assets/script/BallOut.cs" Line="18" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
