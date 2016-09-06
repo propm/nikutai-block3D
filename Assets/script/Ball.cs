@@ -11,11 +11,8 @@ public class Ball : MonoBehaviour
 
     private Rigidbody rb;
     private bool ballInPlay;
-	GameObject ball;
-
     void Start()
     {
-		ball = GameObject.Find ("Ball");
         rb = GetComponent<Rigidbody>();
 
     }
@@ -34,7 +31,6 @@ public class Ball : MonoBehaviour
 
 	void onCollisionEnter(Collision collision){
 		velocityCtrl ();
-
 	}
 
 	private void velocityCtrl(){

@@ -20,7 +20,6 @@ public class FeverJudge : MonoBehaviour {
 		if(count >= 1 && MainGameData.GetisFever() == false && MainGameData.GetFever() >= 1){
 			MainGameData.SetFever (MainGameData.GetFever () - redFever);
 			count = 0;
-			Debug.Log (MainGameData.GetFever ());
 		}
 
 		//フィーバーゲージが最大値を超えた場合のフィーバー判定
@@ -32,7 +31,6 @@ public class FeverJudge : MonoBehaviour {
 		//フィーバーの継続処理
 		if (MainGameData.GetisFever () == true) {
 			FeverCount += Time.deltaTime;
-			Debug.Log ("true");
 		}
 		if (FeverCount >= FeverTime) {
 			MainGameData.SetisFever (false);
