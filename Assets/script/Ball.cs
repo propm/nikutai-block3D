@@ -33,11 +33,6 @@ public class Ball : MonoBehaviour
     }
 
 	void onCollisionEnter(Collision collision){
-		if (collision.gameObject.tag == "Respawn") {
-			ball.transform.position = new Vector3 (0f, 1f, 0f);
-			ball.transform.gameObject.GetComponent<Rigidbody> ().velocity = new Vector3 (0f, 0f, 0f);
-			MainGameData.SetBallInPlay (false);
-		} 
 		velocityCtrl ();
 
 	}
