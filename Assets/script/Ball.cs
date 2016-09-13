@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
 {
 
     public float ballInitialVelocity = 600f;
+    public bool started = false;
 
 
     private Rigidbody rb;
@@ -19,36 +20,49 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-		if (Input.GetButtonDown("Fire1") && MainGameData.GetBallInPlay() == false)
+        if (Input.GetButtonDown("Fire1") && MainGameData.GetBallInPlay() == false)
         {
             transform.parent = null;
-			MainGameData.SetBallInPlay (true);
+            MainGameData.SetBallInPlay(true);
             rb.isKinematic = false;
-			rb.AddForce(new Vector3(ballInitialVelocity*2, 0, ballInitialVelocity*(-2)));
+            rb.AddForce(new Vector3(0, 0, ballInitialVelocity * (-1.5f)));
+            started = true;
         }
 
     }
 
-	void onCollisionEnter(Collision collision){
-		velocityCtrl ();
-	}
+    void OnCollisionEnter(Collision collision)
+    {
+        velocityCtrl();
+    }
 
-	private void velocityCtrl(){
-		Vector3 v = rb.velocity;	// 速度を取得.
+    private void velocityCtrl()
+    {
 
-		if(-3.0f < v.x && v.x <= 0.0f){			// Xの速度が-3～0なら.
-			v.x = -3.0f;							// Xの値を -3.0f に.
-		}else if(0.0f < v.x && v.x < 3.0f ){	// Xの速度が0～3なら).
-			v.x =  3.0f;							// Xの値を +3.0f に.
-		}
+        if (started)       //ゲームがスタートされていたら
+        {
+            Vector3 v = rb.velocity;    // 速度を取得.
 
-		if(-10.0f < v.y &&  v.y <= 0.0f){		// Yの速度が-10～0なら.
-			v.y = -10.0f;							// Yの値を -10.0f に.
-		}else if(0.0f < v.y && v.y < 10.0f){	// Yの速度が0～10なら).
-			v.y = 10.0f;							// Yの値を +10.0f に.
-		}
+            if (-25.0f < v.x && v.x < 0.0f)
+            {                                           // Xの速度が-25~0なら.
+                v.x = -25.0f;                           // Xの値を -25.0f に.
+            }
+            else if (0.0f <= v.x && v.x < 25.0f)
+            {                                           // Xの速度が0～25なら.
+                v.x = 25.0f;                            // Xの値を +25.0f に.
+            }
 
-		rb.velocity = v;	// 値を反映.
-	}
+            if (-30.0f < v.z && v.z <= 0.0f)
+            {                                           // Zの速度が-30～0なら.
+                v.z = -30.0f;                           // Zの値を -30.0f に.
+            }
+            else if (0.0f < v.z && v.z < 30.0f)
+            {                                           // Zの速度が0～30なら
+                v.z = 30.0f;                            // Zの値を +20.0f に.
+            }
+
+            rb.velocity = v;    // 値を反映.
+        }
+    }
 
 }
