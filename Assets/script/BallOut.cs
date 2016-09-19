@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BallOut : MonoBehaviour {
 	GameObject ball;
+    public Ball ball2;
 	// Use this for initialization
 	void Start () {
 		ball = GameObject.Find ("Ball");
@@ -19,6 +20,7 @@ public class BallOut : MonoBehaviour {
 			ball.transform.gameObject.GetComponent<Rigidbody> ().velocity = new Vector3 (0f, 0f, 0f);
 			MainGameData.SetBallInPlay (false);
 			Debug.Log ("h");
+            ball2.GetComponent<Ball>().restart = false;
 		} 
 	}
 }

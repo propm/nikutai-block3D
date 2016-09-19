@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 
@@ -8,27 +9,24 @@ public class Ball : MonoBehaviour
 
     public float ballInitialVelocity = 600f;
     public bool started = false;
+    public bool restart = true;
 
 
+    public Countdown countdown;
     private Rigidbody rb;
     private bool ballInPlay;
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
 
+    void Start()
+    {   
+        rb = GetComponent<Rigidbody>();
+        StartCoroutine("Countdown");    //カウントダウンコルーチン開始
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && MainGameData.GetBallInPlay() == false)
-        {
-            transform.parent = null;
-            MainGameData.SetBallInPlay(true);
-            rb.isKinematic = false;
-            rb.AddForce(new Vector3(0, 0, ballInitialVelocity * (-1.5f)));
-            started = true;
+        if(!restart) {        //ボールが動いていなかったら再びカウントダウンからのスタート
+            StartCoroutine("Countdown");
         }
-
     }
 
     void OnCollisionEnter(Collision collision)
@@ -65,4 +63,26 @@ public class Ball : MonoBehaviour
         }
     }
 
+    IEnumerator Countdown() {
+        restart = true;
+
+        countdown.GetComponent<Countdown>().text = 3;
+        countdown.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);             //一秒待つ
+
+        countdown.GetComponent<Countdown>().text = 2;   //カウントダウンテキストを2にする
+        yield return new WaitForSeconds(1);             
+
+        countdown.GetComponent<Countdown>().text = 1;  //カウントダウンテキストを1にする
+        yield return new WaitForSeconds(1);
+
+        countdown.gameObject.SetActive(false);        //カウントダウンテキストを非表示にする    
+
+        //ゲームスタート
+        transform.parent = null;
+        MainGameData.SetBallInPlay(true);
+        rb.isKinematic = false;
+        rb.AddForce(new Vector3(0, 0, ballInitialVelocity * (-1.5f)));
+        started = true;
+    }
 }

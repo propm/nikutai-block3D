@@ -50,6 +50,7 @@
      <Compile Include="Assets\script\Block.cs" />
      <Compile Include="Assets\script\BlockMaker.cs" />
      <Compile Include="Assets\script\BlockReader.cs" />
+     <Compile Include="Assets\script\Countdown.cs" />
      <Compile Include="Assets\script\FeverJudge.cs" />
      <Compile Include="Assets\script\FeverView.cs" />
      <Compile Include="Assets\script\MainGameData.cs" />
