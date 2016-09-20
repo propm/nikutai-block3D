@@ -8,9 +8,9 @@ public class Ball : MonoBehaviour
 {
 
     public float ballInitialVelocity = 600f;
-    public bool started = false;
+    bool started = false;
     public bool restart = true;
-
+    public int count = 3;
 
     public Countdown countdown;
     private Rigidbody rb;
@@ -66,15 +66,14 @@ public class Ball : MonoBehaviour
     IEnumerator Countdown() {
         restart = true;
 
-        countdown.GetComponent<Countdown>().text = 3;
-        countdown.gameObject.SetActive(true);
-        yield return new WaitForSeconds(1);             //一秒待つ
+        countdown.GetComponent<Countdown>().text = count;
+        countdown.gameObject.SetActive(true);           //カウントダウンテキストを表示する
 
-        countdown.GetComponent<Countdown>().text = 2;   //カウントダウンテキストを2にする
-        yield return new WaitForSeconds(1);             
-
-        countdown.GetComponent<Countdown>().text = 1;  //カウントダウンテキストを1にする
-        yield return new WaitForSeconds(1);
+        for (int i = 1; i <= count; i++)
+        {
+            yield return new WaitForSeconds(1);             //一秒待つ
+            countdown.GetComponent<Countdown>().text = count-i;
+        }
 
         countdown.gameObject.SetActive(false);        //カウントダウンテキストを非表示にする    
 
