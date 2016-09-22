@@ -9,6 +9,7 @@ public class Ball : MonoBehaviour
 
     public float ballInitialVelocity = 600f;
     bool started = false;
+    bool activegetter;
     public bool restart = true;
     public int count = 3;
 
@@ -17,14 +18,15 @@ public class Ball : MonoBehaviour
     private bool ballInPlay;
 
     void Start()
-    {   
+    {
         rb = GetComponent<Rigidbody>();
         StartCoroutine("Countdown");    //カウントダウンコルーチン開始
     }
 
     void Update()
     {
-        if(!restart) {        //ボールが動いていなかったら再びカウントダウンからのスタート
+        if (!restart)
+        {        //ボールが動いていなかったら再びカウントダウンからのスタート
             StartCoroutine("Countdown");
         }
     }
@@ -63,19 +65,22 @@ public class Ball : MonoBehaviour
         }
     }
 
-    IEnumerator Countdown() {
+    IEnumerator Countdown()
+    {
         restart = true;
 
         countdown.GetComponent<Countdown>().text = count;
         countdown.gameObject.SetActive(true);           //カウントダウンテキストを表示する
+        activegetter = true;
 
         for (int i = 1; i <= count; i++)
         {
             yield return new WaitForSeconds(1);             //一秒待つ
-            countdown.GetComponent<Countdown>().text = count-i;
+            countdown.GetComponent<Countdown>().text = count - i;
         }
 
         countdown.gameObject.SetActive(false);        //カウントダウンテキストを非表示にする    
+        activegetter = false;
 
         //ゲームスタート
         transform.parent = null;
@@ -84,4 +89,5 @@ public class Ball : MonoBehaviour
         rb.AddForce(new Vector3(0, 0, ballInitialVelocity * (-1.5f)));
         started = true;
     }
+    public bool Getactive() { return activegetter; }
 }
