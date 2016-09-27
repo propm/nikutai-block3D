@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
-{
-
+{    
     public int time = 60;
     public Ball ball;
     bool started = true;
@@ -36,5 +36,8 @@ public class Timer : MonoBehaviour
             yield return new WaitForSeconds(1);
             time -= 1;
         }
+        //制限時間が0になったらスコア画面に遷移
+        SceneManager.LoadScene("ScoreScene");
+
     }
 }

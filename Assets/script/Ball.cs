@@ -2,7 +2,6 @@
 using UnityEngine.UI;
 using System.Collections;
 
-
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
 {

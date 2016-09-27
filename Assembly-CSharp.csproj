@@ -57,6 +57,7 @@
      <Compile Include="Assets\script\Paddle.cs" />
      <Compile Include="Assets\script\ScoreView.cs" />
      <Compile Include="Assets\script\Timer.cs" />
+     <Compile Include="Assets\script\result.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
