@@ -13,6 +13,7 @@ public class Ball : MonoBehaviour
     public int count = 3;
 
     public Countdown countdown;
+    public Paddle paddle;
     private Rigidbody rb;
     private bool ballInPlay;
 
@@ -33,6 +34,7 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         velocityCtrl();
+        paddleCtrl(collision);
     }
 
     private void velocityCtrl()
@@ -41,16 +43,7 @@ public class Ball : MonoBehaviour
         if (started)       //ゲームがスタートされていたら
         {
             Vector3 v = rb.velocity;    // 速度を取得.
-
-            if (-25.0f < v.x && v.x < 0.0f)
-            {                                           // Xの速度が-25~0なら.
-                v.x = -25.0f;                           // Xの値を -25.0f に.
-            }
-            else if (0.0f <= v.x && v.x < 25.0f)
-            {                                           // Xの速度が0～25なら.
-                v.x = 25.0f;                            // Xの値を +25.0f に.
-            }
-
+            
             if (-30.0f < v.z && v.z <= 0.0f)
             {                                           // Zの速度が-30～0なら.
                 v.z = -30.0f;                           // Zの値を -30.0f に.
@@ -63,6 +56,22 @@ public class Ball : MonoBehaviour
             rb.velocity = v;    // 値を反映.
         }
     }
+
+    //パドルにボールが当たったら
+    void paddleCtrl(Collision collision) {
+
+        Vector3 v = rb.velocity;    // 速度を取得.
+
+        //パドルの端に当たるほど反射角度を急にする
+        if (collision.transform.name == "Paddle")
+        {
+            float lag = transform.position.x - paddle.transform.position.x;
+            v.x = lag * 7;
+            if((lag <= 2)&&(lag >= -2)) { v.z = 37f; }
+        }
+        rb.velocity = v;    // 値を反映.
+    }
+
 
     IEnumerator Countdown()
     {

@@ -53,8 +53,10 @@
      <Compile Include="Assets\script\Countdown.cs" />
      <Compile Include="Assets\script\FeverJudge.cs" />
      <Compile Include="Assets\script\FeverView.cs" />
+     <Compile Include="Assets\script\LeftPaddle.cs" />
      <Compile Include="Assets\script\MainGameData.cs" />
      <Compile Include="Assets\script\Paddle.cs" />
+     <Compile Include="Assets\script\RightPaddle.cs" />
      <Compile Include="Assets\script\ScoreView.cs" />
      <Compile Include="Assets\script\Timer.cs" />
      <Compile Include="Assets\script\result.cs" />

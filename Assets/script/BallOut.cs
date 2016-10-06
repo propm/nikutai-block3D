@@ -24,7 +24,6 @@ public class BallOut : MonoBehaviour
             ball.transform.position = new Vector3(0f, 1f, 0f);
             ball.transform.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
             MainGameData.SetBallInPlay(false);
-            Debug.Log("h");
             ball2.GetComponent<Ball>().restart = false;
         }
     }
