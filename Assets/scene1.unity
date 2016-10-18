@@ -1367,7 +1367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af72bc73490d6f419b5466ea836c51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 20
+  time: 30
   ball: {fileID: 1223017460}
 --- !u!1 &1774397736
 GameObject:

@@ -21,11 +21,6 @@ public class Timer : MonoBehaviour
             StartCoroutine("timer");
             started = false;
      }
-
-        if (ball.Getactive()) {
-            StopCoroutine("timer");
-            started = true;
-        }
     }
 
     IEnumerator timer()
