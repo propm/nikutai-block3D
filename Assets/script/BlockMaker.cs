@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BlockMaker : MonoBehaviour {
 	private int Child; //子オブジェクトの数
 	private int countStage = 0; //ステージ番号のカウント
+    private int clear = 0; //クリア判定
 	public GameObject Stage0;
 	public GameObject Stage1;
 	public GameObject Stage2;
@@ -22,9 +24,18 @@ public class BlockMaker : MonoBehaviour {
 	void Update () {
 		Child = transform.childCount;
 		if (Child <= 0) {
-			countStage++;
-			Stage = (GameObject)Instantiate (Stages[countStage], new Vector3 (0, 0, 0), Quaternion.identity);
-			Stage.transform.parent = transform;
+            if (clear == 0)
+            {
+                countStage++;
+                Stage = (GameObject)Instantiate(Stages[countStage], new Vector3(0, 0, 0), Quaternion.identity);
+                Stage.transform.parent = transform;
+                clear++;
+            }
+            else { clear++; }
 		}
+        //クリアしたらスコアシーンに遷移する
+        if(clear == 2) {
+            SceneManager.LoadScene("ScoreScene");
+        }
 	}
 }
