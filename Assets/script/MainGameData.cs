@@ -45,11 +45,16 @@ public class MainGameData : MonoBehaviour {
 		
 	// Use this for initialization
 	void Start () {
-	
+        Socket.Init();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        Socket.Update();
 	}
+
+    void OnApplicationQuit()
+    {
+        Socket.End();
+    }
 }

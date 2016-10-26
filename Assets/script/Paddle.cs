@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Paddle : MonoBehaviour
-{
+{ 
 
 	public float paddleSpeed = 1f;
 
