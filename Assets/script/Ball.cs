@@ -5,6 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
 {
+    public GameObject prefab;
 
     public float ballInitialVelocity = 600f;
     bool started = false;
@@ -21,6 +22,7 @@ public class Ball : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         StartCoroutine("Countdown");    //カウントダウンコルーチン開始
+
     }
 
     void Update()
@@ -29,12 +31,23 @@ public class Ball : MonoBehaviour
         {        //ボールが動いていなかったら再びカウントダウンからのスタート
             StartCoroutine("Countdown");
         }
+        if (MainGameData.GetisFever() == true)
+        {
+            Vector3 particle = this.transform.position;
+            Instantiate(prefab, particle, Quaternion.identity);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
     {
         velocityCtrl();
         paddleCtrl(collision);
+
+        if (collision.gameObject.CompareTag("Particle") == false)
+        {
+            Vector3 particle = this.transform.position;
+            Instantiate(prefab, particle, Quaternion.identity);
+        }
     }
 
     private void velocityCtrl()
@@ -68,8 +81,8 @@ public class Ball : MonoBehaviour
             float lag = transform.position.x - paddle.transform.position.x;
             v.x = lag * 7;
             if((lag <= 2)&&(lag >= -2)) { v.z = 37f; }
+            rb.velocity = v;    // 値を反映.
         }
-        rb.velocity = v;    // 値を反映.
     }
 
 
