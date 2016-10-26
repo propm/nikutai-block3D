@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {    
-    public int time = 60;
+    public static int time = 100;
     public Ball ball;
     bool started = true;
 
@@ -35,4 +35,5 @@ public class Timer : MonoBehaviour
         SceneManager.LoadScene("ScoreScene");
 
     }
+    public static int getTime() { return time; }
 }

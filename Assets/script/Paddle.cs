@@ -12,6 +12,9 @@ public class Paddle : MonoBehaviour
 
 	void Update()
 	{
+        int value = Socket.Value;
+        Debug.Log(value.ToString());
+
 		//Vector3 mPosition = Input.mousePosition;
 		float xPos = transform.position.x + (Input.GetAxis("Horizontal") * paddleSpeed);
 		//float xPos = mPosition.x;
