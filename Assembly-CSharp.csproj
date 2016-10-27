@@ -60,6 +60,7 @@
      <Compile Include="Assets\script\FeverView.cs" />
      <Compile Include="Assets\script\MainGameData.cs" />
      <Compile Include="Assets\script\Paddle.cs" />
+     <Compile Include="Assets\script\Play.cs" />
      <Compile Include="Assets\script\ScoreView.cs" />
      <Compile Include="Assets\script\Socket.cs" />
      <Compile Include="Assets\script\Timer.cs" />

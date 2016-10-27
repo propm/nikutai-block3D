@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
-/*
+
 public static class Socket
 {
     private const string DllPath = "SocketClient.dll";
@@ -17,11 +17,11 @@ public static class Socket
 
     private static int value;
 
-    public static int Value
+    public static float Value
     {
         get
         {
-            return value;
+            return value / 10000.0f;
         }
     }
 
@@ -38,4 +38,3 @@ public static class Socket
         close();
     }
 }
-*/

@@ -127,6 +127,7 @@ GameObject:
   - 33: {fileID: 60265722}
   - 65: {fileID: 60265721}
   - 23: {fileID: 60265720}
+  - 114: {fileID: 60265724}
   m_Layer: 0
   m_Name: wall L
   m_TagString: Particle
@@ -144,7 +145,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: b4ffb59dc2ff85248a2cc0f6d35ef3e3, type: 2}
+  - {fileID: 2100000, guid: 71973b6ad77d54b638e30482d8922a6b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -191,6 +192,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 12045800}
   m_RootOrder: 0
+--- !u!114 &60265724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60265719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b793b9768b6ecd5489ddf1c1c5d228b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 15200000, guid: cdf11c89a3309c0419b89e8ba0e7556d, type: 3}
 --- !u!1 &73108496
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +215,7 @@ GameObject:
   - 33: {fileID: 73108499}
   - 65: {fileID: 73108498}
   - 23: {fileID: 73108497}
+  - 114: {fileID: 73108501}
   m_Layer: 0
   m_Name: wall R
   m_TagString: Particle
@@ -219,7 +233,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: b4ffb59dc2ff85248a2cc0f6d35ef3e3, type: 2}
+  - {fileID: 2100000, guid: 71973b6ad77d54b638e30482d8922a6b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -266,6 +280,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 12045800}
   m_RootOrder: 1
+--- !u!114 &73108501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73108496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b793b9768b6ecd5489ddf1c1c5d228b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 15200000, guid: cdf11c89a3309c0419b89e8ba0e7556d, type: 3}
 --- !u!1 &92036571
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +523,7 @@ GameObject:
   - 33: {fileID: 565102071}
   - 65: {fileID: 565102070}
   - 23: {fileID: 565102069}
+  - 114: {fileID: 565102073}
   m_Layer: 0
   m_Name: wall
   m_TagString: Particle
@@ -514,7 +541,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: b4ffb59dc2ff85248a2cc0f6d35ef3e3, type: 2}
+  - {fileID: 2100000, guid: 71973b6ad77d54b638e30482d8922a6b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -561,6 +588,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 12045800}
   m_RootOrder: 2
+--- !u!114 &565102073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565102068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b793b9768b6ecd5489ddf1c1c5d228b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 15200000, guid: cdf11c89a3309c0419b89e8ba0e7556d, type: 3}
 --- !u!1 &574071760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redFever: 1
   MaxFever: 50
-  FeverTime: 15
+  FeverTime: 30
 --- !u!4 &1374693247
 Transform:
   m_ObjectHideFlags: 0

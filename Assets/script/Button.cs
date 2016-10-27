@@ -11,6 +11,8 @@ public class Button : MonoBehaviour {
         Application.LoadLevel("ScoreScene");
         MainGameData.SetScore(0);
         MainGameData.SetFever(0);
+        MainGameData.isFever = false;
+        Timer.time = 100;
         SceneManager.LoadScene("scene1");
     }
 }
