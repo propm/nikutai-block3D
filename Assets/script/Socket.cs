@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using UnityEngine;
+/*
 public static class Socket
 {
-    [DllImport("SocketClient.dll")]
+    private const string DllPath = "SocketClient.dll";
+
+    [DllImport(DllPath)]
     private static extern bool setup();
 
-    [DllImport("SocketClient.dll")]
+    [DllImport(DllPath)]
     private static extern int update();
 
-    [DllImport("SocketClient.dll")]
+    [DllImport(DllPath)]
     private static extern void close();
 
     private static int value;
@@ -27,9 +31,11 @@ public static class Socket
 
     public static void Update() {
         value = update();
+        //Debug.Log("a");
     }
 
     public static void End() {
         close();
     }
 }
+*/

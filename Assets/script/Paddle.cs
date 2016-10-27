@@ -1,19 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Runtime.InteropServices;
 
 public class Paddle : MonoBehaviour
-{ 
+{
+    private const string DllName = "SocketClient.dll";
 
-	public float paddleSpeed = 1f;
+    [DllImport(DllName)]
+    private static extern bool setup();
 
+    [DllImport(DllName)]
+    private static extern int update();
 
+    [DllImport(DllName)]
+    private static extern void close();
+
+    public float paddleSpeed = 1f;
+    
 	private Vector3 playerPos = new Vector3(0, 1f, -25f);
+
+    void start()
+    {
+
+    }
 
 	void Update()
 	{
-        int value = Socket.Value;
-        Debug.Log(value.ToString());
 
 		//Vector3 mPosition = Input.mousePosition;
 		float xPos = transform.position.x + (Input.GetAxis("Horizontal") * paddleSpeed);
@@ -22,4 +34,9 @@ public class Paddle : MonoBehaviour
 		transform.position = playerPos;
 
 	}
+
+    void OnApplicationQuit()
+    {
+
+    }
 }

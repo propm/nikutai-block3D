@@ -45,6 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\TypeOut\Scripts\GUIScript.cs" />
+     <Compile Include="Assets\TypeOut\Scripts\TypeOutEditor.cs" />
+     <Compile Include="Assets\TypeOut\Scripts\TypeOutScript.cs" />
      <Compile Include="Assets\script\Ball.cs" />
      <Compile Include="Assets\script\BallOut.cs" />
      <Compile Include="Assets\script\Block.cs" />
