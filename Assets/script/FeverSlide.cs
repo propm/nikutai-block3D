@@ -11,6 +11,6 @@ public class FeverSlide : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        slider.value = MainGameData.GetFever();
+            slider.value = MainGameData.GetFever();
     }
 }

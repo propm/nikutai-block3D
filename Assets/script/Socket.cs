@@ -1,40 +1,45 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using UnityEngine;
+using System.Net.Sockets;
+using System.Threading;
 
-public static class Socket
+static class Socket
 {
-    private const string DllPath = "SocketClient.dll";
+    public static int Data { get { return data; } }
 
-    [DllImport(DllPath)]
-    private static extern bool setup();
+    public static bool IsEnd { get; set; }
 
-    [DllImport(DllPath)]
-    private static extern int update();
+    private static TcpClient client;
 
-    [DllImport(DllPath)]
-    private static extern void close();
+    private static NetworkStream stream;
 
-    private static int value;
+    private static Thread thread;
 
-    public static float Value
+    private static volatile int data;
+
+    static Socket()
     {
-        get
+        Init();
+    }
+
+    private static void Init()
+    {
+        client = new TcpClient("127.0.0.1", 12345);
+        stream = client.GetStream();
+
+        thread = new Thread(new ThreadStart(update));
+        thread.Start();
+    }
+
+    private static void update()
+    {
+        while (!IsEnd)
         {
-            return value / 10000.0f;
+            var buffer = new byte[1];
+            stream.Read(buffer, 0, 1);
+            data = -(sbyte)buffer[0];
         }
-    }
 
-    public static bool Init() {
-        return setup();
-    }
-
-    public static void Update() {
-        value = update();
-        //Debug.Log("a");
-    }
-
-    public static void End() {
-        close();
+        stream.Dispose();
+        client.Close();
     }
 }

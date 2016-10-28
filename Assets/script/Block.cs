@@ -6,6 +6,8 @@ public class Block : MonoBehaviour {
 	public int FeverAddScore = 750;
 	public GameObject thisBlock;
 	Collider BlockCollider;
+    public GameObject block;
+    public Material materiale;
 	// Use this for initialization
 	void Start () {
 		BlockCollider = thisBlock. GetComponent<Collider>();
@@ -19,6 +21,7 @@ public class Block : MonoBehaviour {
 		} else {
 			BlockCollider.isTrigger = false;
 		}
+        
 	}
 
 	void OnCollisionEnter(Collision collision) {

@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour {
-    
+    public int number; 
     // ボタンをクリックした時の処理
     public void ButtonPush()
     {
@@ -13,6 +13,9 @@ public class Button : MonoBehaviour {
         MainGameData.SetFever(0);
         MainGameData.isFever = false;
         Timer.time = 100;
-        SceneManager.LoadScene("scene1");
+        if (number == 1)
+        {
+            SceneManager.LoadScene("scene1");
+        }else SceneManager.LoadScene("StartScene");
     }
 }

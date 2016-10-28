@@ -19,7 +19,7 @@ public class BlockReader : MonoBehaviour {
 
 	public GameObject StandardBlock;
 	GameObject Root;	
-	GameObject Block;
+	public GameObject Block;
 
 	private int Child; //子オブジェクトの数
 	//CSVデータ読み込み関数
