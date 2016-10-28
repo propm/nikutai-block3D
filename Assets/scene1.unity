@@ -1555,7 +1555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8710425a988f75449113731fbc80b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 158102, guid: 798b32b4b3305f846a02668e727badc9, type: 2}
+  prefab: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
+  feverParticle: {fileID: 158102, guid: 798b32b4b3305f846a02668e727badc9, type: 2}
   ballInitialVelocity: 1000
   restart: 1
   count: 3
@@ -1743,7 +1744,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 215.9}
+  m_AnchoredPosition: {x: 8, y: 211}
   m_SizeDelta: {x: 48, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379302849
@@ -1846,7 +1847,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: 163.7}
+  m_AnchoredPosition: {x: 21, y: 158}
   m_SizeDelta: {x: 105, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1505067113

@@ -6,6 +6,7 @@ using System.Collections;
 public class Ball : MonoBehaviour
 {
     public GameObject prefab;
+    public GameObject feverParticle;
 
     public float ballInitialVelocity = 600f;
     bool started = false;
@@ -33,8 +34,8 @@ public class Ball : MonoBehaviour
         }
         if (MainGameData.GetisFever() == true)
         {
-            Vector3 particle = this.transform.position;
-            Instantiate(prefab, particle, Quaternion.identity);
+            Vector3 particlePosition = this.transform.position;
+            GameObject ob = (GameObject)Instantiate(feverParticle, particlePosition, Quaternion.identity);
         }
     }
 
@@ -42,12 +43,6 @@ public class Ball : MonoBehaviour
     {
         velocityCtrl();
         paddleCtrl(collision);
-
-        if (collision.gameObject.CompareTag("Particle") == false)
-        {
-            Vector3 particle = this.transform.position;
-            Instantiate(prefab, particle, Quaternion.identity);
-        }
     }
 
     private void velocityCtrl()

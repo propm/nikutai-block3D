@@ -96,6 +96,7 @@ MonoBehaviour:
   thisBlock: {fileID: 160504}
   block: {fileID: 0}
   materiale: {fileID: 0}
+  prefab: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

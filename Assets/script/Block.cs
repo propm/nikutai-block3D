@@ -8,10 +8,11 @@ public class Block : MonoBehaviour {
 	Collider BlockCollider;
     public GameObject block;
     public Material materiale;
+    public GameObject prefab;
 	// Use this for initialization
 	void Start () {
 		BlockCollider = thisBlock. GetComponent<Collider>();
-	}
+    }
 
 
 	// Update is called once per frame
@@ -21,10 +22,9 @@ public class Block : MonoBehaviour {
 		} else {
 			BlockCollider.isTrigger = false;
 		}
-        
-	}
+}
 
-	void OnCollisionEnter(Collision collision) {
+    void OnCollisionEnter(Collision collision) {
 		//衝突判定
 		if (collision.gameObject.tag == "Ball") {
 			//相手のタグがBallならば、自分を消す
@@ -32,13 +32,20 @@ public class Block : MonoBehaviour {
 			if (MainGameData.GetisFever () == false) {
 				MainGameData.SetFever (MainGameData.GetFever () + 4);
 			}
-			Destroy(this.gameObject);
+
+            Vector3 particlePosition = this.transform.position;
+            Instantiate(prefab, particlePosition, Quaternion.identity);
+
+            Destroy(this.gameObject);
 		}
-	}
+    }
 
 	void OnTriggerEnter(Collider trigger){
-		if(trigger.gameObject.tag== "Ball"){
-			MainGameData.SetScore(MainGameData.GetScore()+FeverAddScore); 
+		if(trigger.gameObject.tag == "Ball"){
+            Vector3 particlePosition = this.transform.position;
+            Instantiate(prefab, particlePosition, Quaternion.identity);
+
+            MainGameData.SetScore(MainGameData.GetScore()+FeverAddScore); 
 			Destroy(this.gameObject);
 		}
 	}
