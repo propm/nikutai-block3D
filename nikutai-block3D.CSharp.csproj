@@ -81,6 +81,7 @@
     <Compile Include="Assets\script\FeverSound.cs" />
     <Compile Include="Assets\script\FeverView.cs" />
     <Compile Include="Assets\script\MainGameData.cs" />
+    <Compile Include="Assets\script\MovieOnUI.cs" />
     <Compile Include="Assets\script\NewBehaviourScript.cs" />
     <Compile Include="Assets\script\Paddle.cs" />
     <Compile Include="Assets\script\Play.cs" />
