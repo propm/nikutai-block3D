@@ -9,6 +9,7 @@ public class MainGameData : MonoBehaviour {
 	public static bool isFever = false; //フィーバー判定
 	public static int MaxFever = 50; //フィーバーゲージの最大値
 	public static bool BallInPlay = false;
+    public static int highScore = 0;
 
 	public static int GetScore(){
 		return Score;

@@ -78,8 +78,10 @@
     <Compile Include="Assets\script\Countdown.cs" />
     <Compile Include="Assets\script\FeverJudge.cs" />
     <Compile Include="Assets\script\FeverSlide.cs" />
+    <Compile Include="Assets\script\FeverSound.cs" />
     <Compile Include="Assets\script\FeverView.cs" />
     <Compile Include="Assets\script\MainGameData.cs" />
+    <Compile Include="Assets\script\NewBehaviourScript.cs" />
     <Compile Include="Assets\script\Paddle.cs" />
     <Compile Include="Assets\script\Play.cs" />
     <Compile Include="Assets\script\ScoreView.cs" />

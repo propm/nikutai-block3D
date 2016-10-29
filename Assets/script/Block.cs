@@ -9,8 +9,9 @@ public class Block : MonoBehaviour {
     public GameObject block;
     public Material materiale;
     public GameObject prefab;
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		BlockCollider = thisBlock. GetComponent<Collider>();
     }
 

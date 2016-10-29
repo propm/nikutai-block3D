@@ -7,7 +7,7 @@ public class FeverJudge : MonoBehaviour {
 	public int MaxFever = 50; //フィーバーゲージの最大値
 	public int FeverTime = 15; //フィーバーの継続時間
 
-	private float FeverCount = 0;
+	float FeverCount = 0;
 
 	void Start () {
 		MainGameData.SetMaxFever (MaxFever);

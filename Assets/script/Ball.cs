@@ -18,12 +18,12 @@ public class Ball : MonoBehaviour
     public Paddle paddle;
     private Rigidbody rb;
     private bool ballInPlay;
+    public AudioSource audio;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         StartCoroutine("Countdown");    //カウントダウンコルーチン開始
-
     }
 
     void Update()
@@ -43,6 +43,18 @@ public class Ball : MonoBehaviour
     {
         velocityCtrl();
         paddleCtrl(collision);
+        if (collision.gameObject.tag == "Block")
+        {
+            audio.PlayOneShot(audio.clip);
+        }
+    }
+
+    void OnTriggerEnter(Collider trigger)
+    {
+        if (trigger.gameObject.tag == "Block")
+        {
+            audio.PlayOneShot(audio.clip);
+        }
     }
 
     private void velocityCtrl()
