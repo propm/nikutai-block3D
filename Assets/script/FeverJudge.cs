@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class FeverJudge : MonoBehaviour {
 	private float count = 0;
 	public int redFever = 1; //フィーバーゲージの減算量
 	public int MaxFever = 50; //フィーバーゲージの最大値
 	public int FeverTime = 15; //フィーバーの継続時間
+    public Text feverText;
 
 	float FeverCount = 0;
 

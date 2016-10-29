@@ -1,0 +1,1180 @@
+Unity Player [version: Unity 5.4.2f2_b7e030c65c9b]
+
+Nikublo.exe caused an Access Violation (0xc0000005)
+  in module Nikublo.exe at 0023:011e06de.
+
+Error occurred at 2016-10-29_182112.
+C:\Users\keigo\Documents\nikutai-block3D\Nikublo.exe, run by keigo.
+52% memory in use.
+0 MB physical memory [3825 MB free].
+0 MB paging file [3083 MB free].
+0 MB user address space [3760 MB free].
+Read from location 00000090 caused an access violation.
+
+Context:
+EDI:    0x0000000f  ESI: 0x006ff53c  EAX:   0x00000080
+EBX:    0x00000000  ECX: 0x00000080  EDX:   0x00000003
+EIP:    0x011e06de  EBP: 0x006ff51c  SegCs: 0x00000023
+EFlags: 0x00210203  ESP: 0x006ff510  SegSs: 0x0000002b
+
+Bytes at CS:EIP:
+8b 79 10 3b fb 73 0a 68 d4 ef f7 01 e8 b1 c9 6f 
+
+Stack:
+0x006ff510: 0000000f 0000000f 00000000 006ff574 ............t.o.
+0x006ff520: 014a434d 00000080 00000000 ffffffff MCJ.............
+0x006ff530: 0000000f 006ff610 00000000 00000000 ......o.........
+0x006ff540: 01f7eea8 0000004b 006ff568 00000000 ....K...h.o.....
+0x006ff550: 0000000f 00000010 00000042 00000000 ........B.......
+0x006ff560: 01f7eea8 0000004b 006ff59c 011dfbc6 ....K.....o.....
+0x006ff570: 00000020 006ff5c4 014a4494 006ff58c  .....o..DJ...o.
+0x006ff580: 00000000 0000000f 00000000 006ff578 ............x.o.
+0x006ff590: 006ff5cc 0000001f 006ff5b8 011e078f ..o.......o.....
+0x006ff5a0: 03d80d10 03d80bd0 0000001f 0000000f ................
+0x006ff5b0: 006ff610 00000000 006ff62c 014a48e6 ..o.....,.o..HJ.
+0x006ff5c0: 006ff5f4 006ff62c 014a48eb 03d80d10 ..o.,.o..HJ.....
+0x006ff5d0: 049e3290 0f04a7a0 0f04a7a0 0000001f .2..............
+0x006ff5e0: 0000001f 006ff5f4 00000010 049e3290 ......o......2..
+0x006ff5f0: 00000000 03d80bd0 03d600d0 021f0000 ................
+0x006ff600: 00000000 0000001f 0000001f 03d600d0 ................
+0x006ff610: 00000000 049e3290 006ff628 012e6952 .....2..(.o.Ri..
+0x006ff620: 00000000 0000000f 006ff724 006ff724 ........$.o.$.o.
+0x006ff630: 017d3559 006ff644 00000010 049e3290 Y5}.D.o......2..
+0x006ff640: 00000000 006ff65c 012e5185 03d709a0 ....\.o..Q......
+0x006ff650: 00000010 00000010 021f0000 006ff694 ..............o.
+0x006ff660: 342e3575 3266322e 00000000 0000002f u5.4.2f2..../...
+0x006ff670: 00000008 0000000f 00000000 03d70340 ............@...
+0x006ff680: 012e7292 00000030 00000010 00000020 .r..0....... ...
+0x006ff690: 0000002f 006ff6b4 646e6957 5073776f /.....o.WindowsP
+0x006ff6a0: 6579616c 00000072 0000000d 0000000f layer...........
+0x006ff6b0: 0000004b 03d70340 011df599 00000030 K...@.......0...
+0x006ff6c0: 00000010 00000020 0000002f 01f7eea8 .... .../.......
+0x006ff6d0: 03d600d0 006ff708 011dfbc6 00000030 ......o.....0...
+0x006ff6e0: 00000028 0000002f 049e32a0 342e3500 (.../....2...5.4
+0x006ff6f0: 3266322e 049e3200 006ff6e4 00000000 .2f2.2....o.....
+0x006ff700: 0000000f 006ff724 03d70200 03d709a0 ....$.o.........
+0x006ff710: 03d70ac0 00000024 00000000 0000000f ....$...........
+0x006ff720: 00000000 006ff72c 017d24ba 006ff73c ....,.o..$}.<.o.
+0x006ff730: 017d2f97 00000001 049e3290 006ff7b0 ./}......2....o.
+0x006ff740: 017d471b 006ff754 00000001 049e3290 .G}.T.o......2..
+0x006ff750: 00011e8e 03d70ac0 049e3238 00000000 ........82......
+0x006ff760: 0217f548 00000024 0000002f 0148eb00 H...$.../.....H.
+0x006ff770: 00000000 00000000 00000005 00000000 ................
+0x006ff780: 00000000 0000000f 0fbd822f 00000100 ......../.......
+0x006ff790: 00000000 006ff809 00000010 00000000 ......o.........
+0x006ff7a0: 0000000f 0217f624 049e3290 006ff7c0 ....$....2....o.
+0x006ff7b0: 006ff7c0 017d47e5 00000000 021a9670 ..o..G}.....p...
+0x006ff7c0: 006ff7dc 017d485f 00000001 1e042664 ..o._H}.....d&..
+0x006ff7d0: 1e042664 00011e8e 00000000 006ff810 d&............o.
+0x006ff7e0: 017d14d5 049e3290 00000001 1e042664 ..}..2......d&..
+0x006ff7f0: 1e042664 00011e8e 00000000 02022de5 d&...........-..
+0x006ff800: 049e3238 00000000 021a9670 00000000 82......p.......
+0x006ff810: 006ff878 017d2144 00000001 1e042664 x.o.D!}.....d&..
+0x006ff820: 1e042664 00011e8e 00000000 00000002 d&..............
+0x006ff830: 00000003 021a6350 03d70900 03d80e90 ....Pc..........
+0x006ff840: 03d5e3b0 006ff8b4 00000000 0000000f ......o.........
+0x006ff850: 00000002 03d709a0 006ff848 006ffc08 ........H.o...o.
+0x006ff860: 00000000 00000024 0000002f 006ff888 ....$.../.....o.
+0x006ff870: 0fbe208e 00000000 006ff884 017d229a . ........o.."}.
+0x006ff880: 00000001 006ff8ac 0141efa0 049e3238 ......o...A.82..
+0x006ff890: ffffffbc 043b7df0 00000002 043b7df0 .....};......};.
+0x006ff8a0: 03d5ba01 043b7d60 021a632c 006ff914 ....`};.,c....o.
+0x006ff8b0: 0141fcaf ffffffbc 043b7df0 00000002 ..A......};.....
+0x006ff8c0: 03d5bab0 043b7d60 03d5ba01 03d80d30 ....`};.....0...
+0x006ff8d0: 03d80d30 00000000 043b7db4 006ff8f0 0........};...o.
+0x006ff8e0: 03d80d50 00000000 03d80d30 00000000 P.......0.......
+0x006ff8f0: 006ff900 012e68f0 03d80d30 00000008 ..o..h..0.......
+0x006ff900: 006ff938 011e8700 03d80d30 043b7d60 8.o.....0...`};.
+0x006ff910: 043b7d60 006ff938 0141fe6f 03d5bab0 `};.8.o.o.A.....
+0x006ff920: 043b7d60 0141eb9a 00000010 03d5bab0 `};...A.........
+0x006ff930: 00000001 03d5bab0 006ff958 0141ec2a ........X.o.*.A.
+0x006ff940: 00000002 7fffffff 00000010 043b7d60 ............`};.
+0x006ff950: 00000000 00000001 006ff968 012c81f1 ........h.o...,.
+0x006ff960: 0000000f 043cec30 006ff9fc 013fadec ....0.<...o...?.
+0x006ff970: 006ff994 006ff9b0 006ff9cc 006ff9e8 ..o...o...o...o.
+0x006ff980: 00000000 00000002 76732450 76726730 ........P$sv0grv
+0x006ff990: 00000004 03d80dd0 006ff9d0 01251094 ..........o...%.
+0x006ff9a0: 006ff9d0 00000017 0000001f 021adbcc ..o.............
+0x006ff9b0: 6576656c 0100306c 00000000 00000000 level0..........
+0x006ff9c0: 00000006 0000000f 00000000 03d80db0 ................
+0x006ff9d0: 006ff9ec 012c7286 03d80dd0 00000014 ..o..r,.........
+0x006ff9e0: 0000001f 00000000 00000000 00000000 ................
+0x006ff9f0: 00000000 00000000 76726730 006ffa38 ........0grv8.o.
+0x006ffa00: 013fae92 00000000 01491852 01492079 ..?.....R.I.y I.
+0x006ffa10: 00000000 00000001 004008f6 000000ff ..........@.....
+0x006ffa20: 00000001 01df11c3 0610ed02 00000476 ............v...
+0x006ffa30: 0000039f 00000764 006ffb70 014940ae ....d...p.o..@I.
+0x006ffa40: 018bdbdb 00000000 00436000 03d3f910 .........`C.....
+0x006ffa50: 01c0003f 000001ff 00000000 0000003e ?...........>...
+0x006ffa60: 0000003f 00000fff 03d47c10 018d9166 ?........|..f...
+0x006ffa70: 00000010 00000001 00000043 0000004f ........C...O...
+0x006ffa80: 006ffa38 006ffaa0 0186fa0e afbc5a29 8.o...o.....)Z..
+0x006ffa90: 006ffac0 018d9198 afbc5a25 006ffacc ..o.....%Z....o.
+0x006ffaa0: 018d9198 00000411 00001001 010d1fc8 ................
+0x006ffab0: 00000010 00000010 000003a4 03d47d50 ............P}..
+0x006ffac0: 010d1a60 04d65744 006ffa00 00000044 `...DW....o.D...
+0x006ffad0: 0000004f 006ffafc 03d3fa10 00001001 O.....o.........
+0x006ffae0: 010d1fc8 00000010 00000035 0000003f ........5...?...
+0x006ffaf0: 006ffa2c 616e614d 00646567 6c65746e ,.o.Managed.ntel
+0x006ffb00: 00000000 00000007 0000000f 006ffb18 ..............o.
+0x006ffb10: 03d3f950 03d3f988 03d3f988 00000014 P...............
+0x006ffb20: 037a0040 65646900 646e6957 6c00776f @.z..ideWindow.l
+0x006ffb30: 006f006c 00000000 0000000f 00000000 l.o.............
+0x006ffb40: 00000000 65726100 5748746e 0100444e .....arentHWND..
+0x006ffb50: 008842e5 00000000 0000000f 00000000 .B..............
+0x006ffb60: 037a0040 037a0080 00000000 00100801 @.z...z.........
+0x006ffb70: 006ffb88 0188e478 011d0000 00000000 ..o.x...........
+0x006ffb80: 008842e7 00000001 006ffc18 018bdb88 .B........o.....
+0x006ffb90: 011d0000 00000000 008842e7 00000001 .........B......
+0x006ffba0: afbc5ca1 018bdbdb 018bdbdb 00436000 .\...........`C.
+0x006ffbb0: 00000044 00882468 00882448 008823de D...h$..H$...#..
+0x006ffbc0: 00000000 00000000 00000000 00000000 ................
+0x006ffbd0: 00000000 00000000 00000000 00000401 ................
+0x006ffbe0: 00000001 00000000 00000000 00010001 ................
+0x006ffbf0: 00000000 c0000005 018bdbdb 00000000 ................
+0x006ffc00: 006ffba0 006fef44 006ffc64 018bf500 ..o.D.o.d.o.....
+0x006ffc10: adc09b01 00000000 006ffc2c 73a962c4 ........,.o..b.s
+0x006ffc20: 00436000 73a962a0 66670b9e 006ffc74 .`C..b.s..gft.o.
+0x006ffc30: 77000609 00436000 04d65180 00000000 ...w.`C..Q......
+0x006ffc40: 00000000 00436000 c0000005 00000000 .....`C.........
+0x006ffc50: 006fef24 7489d150 04d65180 006ffc38 $.o.P..t.Q..8.o.
+0x006ffc60: 006fef24 006ffc7c 77015de0 73b0d0b4 $.o.|.o..].w...s
+0x006ffc70: 00000000 006ffc84 770005d4 ffffffff ......o....w....
+0x006ffc80: 7702252e 00000000 00000000 018bdbdb .%.w............
+0x006ffc90: 00436000 00000000 00000000 00000000 .`C.............
+0x006ffca0: 00000000 00000000 00000000 00000000 ................
+0x006ffcb0: 00000000 00000000 00000000 00000000 ................
+0x006ffcc0: 00000000 00000000 00000000 00000000 ................
+0x006ffcd0: 00000000 00000000 00000000 00000000 ................
+0x006ffce0: 00000000 00000000 00000000 00000000 ................
+0x006ffcf0: 00000000 00000000 00000000 00000000 ................
+0x006ffd00: 00000000 00000000 00000000 00000000 ................
+0x006ffd10: 00000000 00000000 00000000 00000000 ................
+0x006ffd20: 00000000 00000000 00000000 00000000 ................
+0x006ffd30: 00000000 00000000 00000000 00000000 ................
+0x006ffd40: 00000000 00000000 00000000 00000000 ................
+0x006ffd50: 00000000 00000000 00000000 00000000 ................
+0x006ffd60: 00000000 00000000 00000000 00000000 ................
+0x006ffd70: 00000000 00000000 00000000 00000000 ................
+0x006ffd80: 00000000 00000000 00000000 00000000 ................
+0x006ffd90: 00000000 00000000 00000000 00000000 ................
+0x006ffda0: 00000000 00000000 00000000 00000000 ................
+0x006ffdb0: 00000000 00000000 00000000 00000000 ................
+0x006ffdc0: 00000000 00000000 00000000 00000000 ................
+0x006ffdd0: 00000000 00000000 00000000 00000000 ................
+0x006ffde0: 00000000 00000000 00000000 00000000 ................
+0x006ffdf0: 00000000 00000000 00000000 00000000 ................
+0x006ffe00: 00000000 00000000 00000000 00000000 ................
+0x006ffe10: 00000000 00000000 00000000 00000000 ................
+0x006ffe20: 00000000 00000000 00000000 00000000 ................
+0x006ffe30: 00000000 00000000 00000000 00000000 ................
+0x006ffe40: 00000000 00000000 00000000 00000000 ................
+0x006ffe50: 00000000 00000000 00000000 00000000 ................
+0x006ffe60: 00000000 00000000 00000000 00000000 ................
+0x006ffe70: 00000000 00000000 00000000 00000000 ................
+0x006ffe80: 00000000 00000000 00000000 00000000 ................
+0x006ffe90: 00000000 00000000 00000000 00000000 ................
+0x006ffea0: 00000000 00000000 00000000 00000000 ................
+0x006ffeb0: 00000000 00000000 00000000 00000000 ................
+0x006ffec0: 00000000 00000000 00000000 00000000 ................
+0x006ffed0: 00000000 00000000 00000000 00000000 ................
+0x006ffee0: 00000000 00000000 00000000 00000000 ................
+0x006ffef0: 00000000 00000000 00000000 00000000 ................
+0x006fff00: 00000000 00000000 00000000 00000000 ................
+0x006fff10: 00000000 00000000 00000000 00000000 ................
+0x006fff20: 00000000 00000000 00000000 00000000 ................
+0x006fff30: 00000000 00000000 00000000 00000000 ................
+0x006fff40: 00000000 00000000 00000000 00000000 ................
+0x006fff50: 00000000 00000000 00000000 00000000 ................
+0x006fff60: 00000000 00000000 00000000 00000000 ................
+0x006fff70: 00000000 00000000 00000000 00000000 ................
+0x006fff80: 00000000 00000000 00000000 00000000 ................
+0x006fff90: 00000000 00000000 00000000 00000000 ................
+0x006fffa0: 00000000 00000000 00000000 00000000 ................
+0x006fffb0: 00000000 00000000 00000000 00000000 ................
+0x006fffc0: 00000000 00000000 00000000 00000000 ................
+0x006fffd0: 00000000 00000000 00000000 00000000 ................
+0x006fffe0: 00000000 00000000 00000000 00000000 ................
+0x006ffff0: 00000000 00000000 00000000 00000000 ................
+
+Module 1
+C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+Image Base: 0x00830000  Image Size: 0x00023000
+File Size:  131208      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Base Multimedia Extension API DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 2
+C:\Users\keigo\Documents\nikutai-block3D\Nikublo.exe
+Image Base: 0x011d0000  Image Size: 0x011b9000
+File Size:  17737216    File Time:  2016-10-20_162638
+Version:
+   Company:    
+   Product:    
+   FileDesc:   
+   FileVer:    5.4.2.57392
+   ProdVer:    5.4.2.57392
+
+Module 3
+C:\Users\keigo\Documents\nikutai-block3D\Nikublo_Data\Mono\mono.dll
+Image Base: 0x10000000  Image Size: 0x00230000
+File Size:  2113496     File Time:  2016-10-20_163136
+Version:
+   Company:    Unity Technologies
+   Product:    libmono
+   FileDesc:   Unity Technologies fork of mono runtime
+   FileVer:    1.0.0.1
+   ProdVer:    1.0.0.1
+
+Module 4
+C:\WINDOWS\SYSTEM32\DDRAW.dll
+Image Base: 0x50130000  Image Size: 0x000ed000
+File Size:  547840      File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft DirectDraw
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 5
+C:\WINDOWS\SYSTEM32\GLU32.dll
+Image Base: 0x50c60000  Image Size: 0x00025000
+File Size:  141312      File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   OpenGL ユーティリティ ライブラリ DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 6
+C:\WINDOWS\SYSTEM32\wintypes.dll
+Image Base: 0x5eed0000  Image Size: 0x000cf000
+File Size:  846560      File Time:  2016-09-16_022056
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows ベース タイプ DLL
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 7
+C:\WINDOWS\SYSTEM32\AUDIOSES.DLL
+Image Base: 0x5efa0000  Image Size: 0x0007b000
+File Size:  484584      File Time:  2016-09-16_031442
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   オーディオ セッション
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 8
+C:\WINDOWS\SYSTEM32\igd10iumd32.dll
+Image Base: 0x5f0c0000  Image Size: 0x00b23000
+File Size:  12032168    File Time:  2016-08-19_013854
+Version:
+   Company:    Intel Corporation
+   Product:    Intel HD Graphics Drivers for Windows(R)
+   FileDesc:   User Mode Driver for Intel(R) Graphics Technology
+   FileVer:    20.19.15.4474
+   ProdVer:    20.19.15.4474
+
+Module 9
+C:\WINDOWS\System32\DEVOBJ.dll
+Image Base: 0x5fbf0000  Image Size: 0x00022000
+File Size:  132232      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Device Information Set DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 10
+C:\WINDOWS\SYSTEM32\midimap.dll
+Image Base: 0x5fc20000  Image Size: 0x00008000
+File Size:  18944       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft MIDI Mapper
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 11
+C:\WINDOWS\SYSTEM32\MSACM32.dll
+Image Base: 0x5fc30000  Image Size: 0x00018000
+File Size:  90912       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft ACM オーディオ フィルター
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 12
+C:\WINDOWS\SYSTEM32\msacm32.drv
+Image Base: 0x5fc50000  Image Size: 0x0000a000
+File Size:  24576       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft サウンド マッパー
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 13
+C:\WINDOWS\SYSTEM32\AVRT.dll
+Image Base: 0x5fc80000  Image Size: 0x00009000
+File Size:  29448       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Multimedia Realtime Runtime
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 14
+C:\WINDOWS\SYSTEM32\wdmaud.drv
+Image Base: 0x5fc90000  Image Size: 0x00039000
+File Size:  207360      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Winmm オーディオ システム ドライバー
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 15
+C:\WINDOWS\System32\MMDevApi.dll
+Image Base: 0x5fcd0000  Image Size: 0x00058000
+File Size:  352768      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   MMDevice API
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 16
+C:\WINDOWS\SYSTEM32\WINHTTP.dll
+Image Base: 0x5fd50000  Image Size: 0x0009f000
+File Size:  631808      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows HTTP サービス
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 17
+C:\WINDOWS\SYSTEM32\ksuser.dll
+Image Base: 0x5fdf0000  Image Size: 0x00007000
+File Size:  20672       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   User CSA Library
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 18
+C:\Windows\System32\IME\SHARED\imesearchdll.dll
+Image Base: 0x617e0000  Image Size: 0x0001a000
+File Size:  97280       File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   IME search module
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 19
+C:\WINDOWS\SYSTEM32\DUI70.dll
+Image Base: 0x63710000  Image Size: 0x00168000
+File Size:  1453568     File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows DirectUI エンジン
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 20
+C:\Windows\System32\IME\shared\imetip.dll
+Image Base: 0x63880000  Image Size: 0x00114000
+File Size:  1114112     File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft IME
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 21
+C:\Windows\System32\IME\IMEJP\imjppred.dll
+Image Base: 0x639a0000  Image Size: 0x000ad000
+File Size:  691712      File Time:  2016-07-16_204418
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft IME
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 22
+C:\WINDOWS\SYSTEM32\msvcp110_win.dll
+Image Base: 0x63a50000  Image Size: 0x00067000
+File Size:  415256      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   MicrosoftR STL110 C++ Runtime Library
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 23
+C:\WINDOWS\SYSTEM32\policymanager.dll
+Image Base: 0x63ac0000  Image Size: 0x0003f000
+File Size:  248472      File Time:  2016-07-16_204304
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Policy Manager DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 24
+C:\Windows\System32\IME\shared\imjkapi.dll
+Image Base: 0x63b00000  Image Size: 0x0002f000
+File Size:  178688      File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft IME
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 25
+C:\WINDOWS\SYSTEM32\NTASN1.dll
+Image Base: 0x63b30000  Image Size: 0x0002b000
+File Size:  173008      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft ASN.1 API
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 26
+C:\WINDOWS\SYSTEM32\ncrypt.dll
+Image Base: 0x63b60000  Image Size: 0x00020000
+File Size:  120384      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows NCrypt ルーター
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 27
+C:\Windows\System32\IME\IMEJP\imjpapi.dll
+Image Base: 0x63b80000  Image Size: 0x001c5000
+File Size:  1754624     File Time:  2016-07-16_204418
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft IME
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 28
+C:\WINDOWS\SYSTEM32\OLEACC.dll
+Image Base: 0x63d50000  Image Size: 0x00054000
+File Size:  325120      File Time:  2016-09-16_015520
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Active Accessibility Core Component
+   FileVer:    7.2.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 29
+C:\Windows\System32\IME\IMEJP\imjptip.dll
+Image Base: 0x63db0000  Image Size: 0x00298000
+File Size:  2642432     File Time:  2016-07-16_204418
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft IME
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 30
+C:\WINDOWS\SYSTEM32\igdusc32.dll
+Image Base: 0x64050000  Image Size: 0x008cb000
+File Size:  5191848     File Time:  2016-08-19_013858
+Version:
+   Company:    Intel Corporation
+   Product:    Intel HD Graphics Drivers for Windows(R)
+   FileDesc:   Unified Shader Compiler for Intel(R) Graphics Accelerator
+   FileVer:    20.19.15.4474
+   ProdVer:    20.19.15.4474
+
+Module 31
+C:\WINDOWS\SYSTEM32\dxgi.dll
+Image Base: 0x64a20000  Image Size: 0x00084000
+File Size:  527880      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   DirectX Graphics Infrastructure
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 32
+C:\WINDOWS\SYSTEM32\d3d11.dll
+Image Base: 0x64bd0000  Image Size: 0x00230000
+File Size:  2277800     File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Direct3D 11 Runtime
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 33
+C:\WINDOWS\SYSTEM32\OPENGL32.dll
+Image Base: 0x69070000  Image Size: 0x000e0000
+File Size:  786944      File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   OpenGL Client DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 34
+C:\WINDOWS\System32\PROPSYS.dll
+Image Base: 0x6d620000  Image Size: 0x0014f000
+File Size:  1375456     File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    WindowsR Search
+   FileDesc:   Microsoft プロパティ システム
+   FileVer:    7.0.14393.0
+   ProdVer:    7.0.14393.0
+
+Module 35
+C:\WINDOWS\SYSTEM32\iertutil.dll
+Image Base: 0x6e360000  Image Size: 0x00229000
+File Size:  2256592     File Time:  2016-10-05_185034
+Version:
+   Company:    Microsoft Corporation
+   Product:    Internet Explorer
+   FileDesc:   Internet Explorer 用ランタイム ユーティリティ
+   FileVer:    11.0.14393.321
+   ProdVer:    11.0.14393.321
+
+Module 36
+C:\WINDOWS\SYSTEM32\ntmarta.dll
+Image Base: 0x72410000  Image Size: 0x00028000
+File Size:  154432      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows NT MARTA プロバイダー
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 37
+C:\WINDOWS\SYSTEM32\dbghelp.dll
+Image Base: 0x724c0000  Image Size: 0x00145000
+File Size:  1220608     File Time:  2016-07-16_204258
+Version:
+   Company:    Microsoft
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows Image Helper
+   FileVer:    10.0.14321.1024
+   ProdVer:    10.0.14321.1024
+
+Module 38
+C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.0_none_74bc87d3d22d9abe\comctl32.dll
+Image Base: 0x729a0000  Image Size: 0x0020a000
+File Size:  2121568     File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   ユーザー エクスペリエンス コントロール ライブラリ
+   FileVer:    6.10.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 39
+C:\WINDOWS\system32\dwmapi.dll
+Image Base: 0x72f20000  Image Size: 0x0001f000
+File Size:  113504      File Time:  2016-09-16_021352
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft デスクトップ ウィンドウ マネージャー API
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 40
+C:\WINDOWS\system32\uxtheme.dll
+Image Base: 0x72f40000  Image Size: 0x00075000
+File Size:  457728      File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft UxTheme ライブラリ
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 41
+C:\WINDOWS\SYSTEM32\DNSAPI.dll
+Image Base: 0x73050000  Image Size: 0x0007c000
+File Size:  496872      File Time:  2016-09-16_023716
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   DNS クライアント API DLL
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 42
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+Image Base: 0x73110000  Image Size: 0x0002f000
+File Size:  184416      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   IP ヘルパー API
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 43
+C:\WINDOWS\system32\rsaenh.dll
+Image Base: 0x73140000  Image Size: 0x0002f000
+File Size:  184416      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft Enhanced Cryptographic Provider
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 44
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+Image Base: 0x73170000  Image Size: 0x00013000
+File Size:  68720       File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Cryptographic Service Provider API
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 45
+C:\WINDOWS\SYSTEM32\MSWSOCK.dll
+Image Base: 0x731d0000  Image Size: 0x0004e000
+File Size:  306016      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft Windows Sockets 2.0 サービス プロバイダー
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 46
+C:\WINDOWS\system32\wbem\fastprox.dll
+Image Base: 0x73750000  Image Size: 0x000c2000
+File Size:  779776      File Time:  2016-07-16_204258
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   WMI Custom Marshaller
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 47
+C:\WINDOWS\system32\wbem\wbemsvc.dll
+Image Base: 0x73820000  Image Size: 0x00010000
+File Size:  48640       File Time:  2016-07-16_204258
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   WMI
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 48
+C:\WINDOWS\SYSTEM32\bcrypt.dll
+Image Base: 0x73830000  Image Size: 0x0001b000
+File Size:  106896      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows 暗号化プリミティブ ライブラリ
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 49
+C:\WINDOWS\SYSTEM32\wbemcomn.dll
+Image Base: 0x73850000  Image Size: 0x00067000
+File Size:  391168      File Time:  2016-07-16_204258
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   WMI
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 50
+C:\WINDOWS\system32\wbem\wbemprox.dll
+Image Base: 0x738c0000  Image Size: 0x0000d000
+File Size:  35328       File Time:  2016-07-16_204258
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   WMI
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 51
+C:\WINDOWS\SYSTEM32\WINMM.dll
+Image Base: 0x739e0000  Image Size: 0x00024000
+File Size:  135376      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   MCI API DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 52
+C:\WINDOWS\SYSTEM32\VERSION.dll
+Image Base: 0x73a40000  Image Size: 0x00008000
+File Size:  27360       File Time:  2016-07-16_204306
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Version Checking and File Installation Libraries
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 53
+C:\WINDOWS\System32\CRYPTBASE.dll
+Image Base: 0x73a50000  Image Size: 0x0000a000
+File Size:  31528       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Base cryptographic API DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 54
+C:\WINDOWS\System32\SspiCli.dll
+Image Base: 0x73a60000  Image Size: 0x0001e000
+File Size:  117240      File Time:  2016-09-07_140758
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Security Support Provider Interface
+   FileVer:    10.0.14393.187
+   ProdVer:    10.0.14393.187
+
+Module 55
+C:\WINDOWS\System32\KERNEL32.DLL
+Image Base: 0x73a80000  Image Size: 0x000e0000
+File Size:  616048      File Time:  2016-07-16_204246
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows NT ベース API クライアント DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 56
+C:\WINDOWS\System32\win32u.dll
+Image Base: 0x74060000  Image Size: 0x00015000
+File Size:  79536       File Time:  2016-08-02_134722
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Win32u
+   FileVer:    10.0.14393.51
+   ProdVer:    10.0.14393.51
+
+Module 57
+C:\WINDOWS\System32\sechost.dll
+Image Base: 0x74080000  Image Size: 0x00041000
+File Size:  255168      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Host for SCM/SDDL/LSA Lookup APIs
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 58
+C:\WINDOWS\System32\PSAPI.DLL
+Image Base: 0x740d0000  Image Size: 0x00006000
+File Size:  17048       File Time:  2016-07-16_204246
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Process Status Helper
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 59
+C:\WINDOWS\System32\SHLWAPI.dll
+Image Base: 0x740e0000  Image Size: 0x00046000
+File Size:  284056      File Time:  2016-07-16_204304
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   シェル ライトウェイト ユーティリティ ライブラリ
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 60
+C:\WINDOWS\System32\NSI.dll
+Image Base: 0x74180000  Image Size: 0x00007000
+File Size:  20152       File Time:  2016-07-16_204228
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   NSI User-mode interface DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 61
+C:\WINDOWS\System32\gdi32full.dll
+Image Base: 0x74190000  Image Size: 0x0015b000
+File Size:  1415752     File Time:  2016-09-16_021404
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   GDI Client DLL
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 62
+C:\WINDOWS\System32\combase.dll
+Image Base: 0x742f0000  Image Size: 0x00211000
+File Size:  2166232     File Time:  2016-09-07_141552
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows 用 Microsoft COM
+   FileVer:    10.0.14393.187
+   ProdVer:    10.0.14393.187
+
+Module 63
+C:\WINDOWS\System32\KERNELBASE.dll
+Image Base: 0x74740000  Image Size: 0x001a1000
+File Size:  1705976     File Time:  2016-10-05_190326
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows NT ベース API クライアント DLL
+   FileVer:    10.0.14393.321
+   ProdVer:    10.0.14393.321
+
+Module 64
+C:\WINDOWS\System32\ADVAPI32.dll
+Image Base: 0x748f0000  Image Size: 0x00077000
+File Size:  482392      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Advanced Windows 32 ベース API
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 65
+C:\WINDOWS\System32\ucrtbase.dll
+Image Base: 0x74980000  Image Size: 0x000e0000
+File Size:  918304      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   MicrosoftR C Runtime Library
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 66
+C:\WINDOWS\System32\profapi.dll
+Image Base: 0x74a60000  Image Size: 0x0000f000
+File Size:  54752       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   User Profile Basic API
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 67
+C:\WINDOWS\System32\MSCTF.dll
+Image Base: 0x74a70000  Image Size: 0x00136000
+File Size:  1264912     File Time:  2016-09-16_021400
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   MSCTF サーバー DLL
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 68
+C:\WINDOWS\System32\msvcrt.dll
+Image Base: 0x74bb0000  Image Size: 0x000be000
+File Size:  773168      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows NT CRT DLL
+   FileVer:    7.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 69
+C:\WINDOWS\System32\shcore.dll
+Image Base: 0x74d10000  Image Size: 0x00088000
+File Size:  549088      File Time:  2016-07-16_204244
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   SHCORE
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 70
+C:\WINDOWS\System32\cfgmgr32.dll
+Image Base: 0x74da0000  Image Size: 0x00036000
+File Size:  213848      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Configuration Manager DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 71
+C:\WINDOWS\System32\ole32.dll
+Image Base: 0x74de0000  Image Size: 0x000ea000
+File Size:  959104      File Time:  2016-09-07_141304
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows 用 Microsoft OLE
+   FileVer:    10.0.14393.187
+   ProdVer:    10.0.14393.187
+
+Module 72
+C:\WINDOWS\System32\CRYPT32.dll
+Image Base: 0x74ed0000  Image Size: 0x0017d000
+File Size:  1556200     File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Crypto API32
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 73
+C:\WINDOWS\System32\bcryptPrimitives.dll
+Image Base: 0x75050000  Image Size: 0x0005a000
+File Size:  367208      File Time:  2016-07-16_204228
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows Cryptographic Primitives Library
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 74
+C:\WINDOWS\System32\GDI32.dll
+Image Base: 0x750b0000  Image Size: 0x0002b000
+File Size:  170960      File Time:  2016-09-16_022320
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   GDI Client DLL
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 75
+C:\WINDOWS\System32\msvcp_win.dll
+Image Base: 0x750e0000  Image Size: 0x0007b000
+File Size:  498408      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   MicrosoftR C Runtime Library
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 76
+C:\WINDOWS\System32\SHELL32.dll
+Image Base: 0x75160000  Image Size: 0x013d7000
+File Size:  20965240    File Time:  2016-10-05_184544
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows シェル共通 DLL
+   FileVer:    10.0.14393.321
+   ProdVer:    10.0.14393.321
+
+Module 77
+C:\WINDOWS\System32\clbcatq.dll
+Image Base: 0x76540000  Image Size: 0x00084000
+File Size:  528360      File Time:  2016-07-16_204248
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   COM+ Configuration Catalog
+   FileVer:    2001.12.10941.16384
+   ProdVer:    10.0.14393.0
+
+Module 78
+C:\WINDOWS\System32\IMM32.dll
+Image Base: 0x765d0000  Image Size: 0x00025000
+File Size:  144632      File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Multi-User Windows IMM32 API Client DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 79
+C:\WINDOWS\System32\kernel.appcore.dll
+Image Base: 0x76600000  Image Size: 0x0000d000
+File Size:  43416       File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   AppModel API Host
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 80
+C:\WINDOWS\System32\OLEAUT32.dll
+Image Base: 0x76610000  Image Size: 0x00094000
+File Size:  601200      File Time:  2016-09-07_143042
+Version:
+   Company:    Microsoft Corporation
+   Product:    
+   FileDesc:   
+   FileVer:    10.0.14393.187
+   ProdVer:    10.0.14393.187
+
+Module 81
+C:\WINDOWS\System32\USER32.dll
+Image Base: 0x76710000  Image Size: 0x0015f000
+File Size:  1435896     File Time:  2016-09-08_084920
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   マルチユーザー Windows ユーザー API クライアント DLL
+   FileVer:    10.0.14393.5
+   ProdVer:    10.0.14393.5
+
+Module 82
+C:\WINDOWS\System32\powrprof.dll
+Image Base: 0x76870000  Image Size: 0x00045000
+File Size:  275832      File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   電源プロファイル ヘルパー DLL
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 83
+C:\WINDOWS\System32\RPCRT4.dll
+Image Base: 0x768c0000  Image Size: 0x000c1000
+File Size:  790760      File Time:  2016-09-08_084932
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   リモート プロシージャ コール ランタイム
+   FileVer:    10.0.14393.82
+   ProdVer:    10.0.14393.82
+
+Module 84
+C:\WINDOWS\System32\windows.storage.dll
+Image Base: 0x769b0000  Image Size: 0x0056e000
+File Size:  5722320     File Time:  2016-09-16_022242
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Microsoft WinRT ストレージ API
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 85
+C:\WINDOWS\System32\WS2_32.dll
+Image Base: 0x76f20000  Image Size: 0x00063000
+File Size:  402352      File Time:  2016-09-16_023706
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows Socket 2.0 32 ビット DLL
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 86
+C:\WINDOWS\System32\MSASN1.dll
+Image Base: 0x76f90000  Image Size: 0x0000e000
+File Size:  49080       File Time:  2016-07-16_204256
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   ASN.1 Runtime APIs
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 87
+C:\WINDOWS\SYSTEM32\ntdll.dll
+Image Base: 0x76fa0000  Image Size: 0x00182000
+File Size:  1570680     File Time:  2016-09-16_023524
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   NT レイヤー DLL
+   FileVer:    10.0.14393.206
+   ProdVer:    10.0.14393.206
+
+Module 88
+C:\WINDOWS\SYSTEM32\DCIMAN32.dll
+Image Base: 0x77700000  Image Size: 0x00007000
+File Size:  11776       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   DCI Manager
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+Module 89
+C:\WINDOWS\SYSTEM32\HID.DLL
+Image Base: 0x77710000  Image Size: 0x0000a000
+File Size:  25600       File Time:  2016-07-16_204250
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   HID ユーザー ライブラリ
+   FileVer:    10.0.14393.0
+   ProdVer:    10.0.14393.0
+
+
+== [end of error.log] ==

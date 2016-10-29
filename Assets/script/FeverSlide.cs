@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class FeverSlide : MonoBehaviour {
     public Slider slider;
-    float feverCage = 50f;
+    float feverCage = 50;
 	// Use this for initialization
 	void Start () {
         
@@ -13,12 +13,11 @@ public class FeverSlide : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (MainGameData.GetisFever()) {
-            feverCage -= 0.1f;
-            slider.value = feverCage;
+            feverCage -= Time.deltaTime;
+            slider.value = (feverCage * 3.33f);
         } else {
             slider.value = MainGameData.GetFever();
-            feverCage = 50f;
+            feverCage = 15;
         }
-        
     }
 }
