@@ -2005,9 +2005,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stage0: {fileID: 191438, guid: 1c9e19568470e4f18a226a67897df018, type: 2}
   Stage1: {fileID: 191438, guid: dec364bc205f84ddcb287bfe9dd43ecc, type: 2}
-  Stage2: {fileID: 0}
-  Stage3: {fileID: 0}
-  Stage4: {fileID: 0}
+  Stage2: {fileID: 191438, guid: 020b7acca9975de428000a81529aa39e, type: 2}
+  Stage3: {fileID: 191438, guid: 17355b0145d83014e8c166b4135ecbfd, type: 2}
+  Stage4: {fileID: 191438, guid: db8676cb3ecb0414195994e34dc004d4, type: 2}
   Stage5: {fileID: 0}
   Stages: []
 --- !u!1 &1910694905

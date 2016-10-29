@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 541e689b2def845e6a65d66099283889
-timeCreated: 1471417185
+timeCreated: 1477698983
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - StandardBlock: {instanceID: 0}
+  - Block: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

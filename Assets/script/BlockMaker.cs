@@ -24,17 +24,18 @@ public class BlockMaker : MonoBehaviour {
 	void Update () {
 		Child = transform.childCount;
 		if (Child <= 0) {
-            if (clear == 0)
+            if (clear == 4)
             {
+                clear++;
+            }else{
                 countStage++;
                 Stage = (GameObject)Instantiate(Stages[countStage], new Vector3(0, 0, 0), Quaternion.identity);
                 Stage.transform.parent = transform;
                 clear++;
             }
-            else { clear++; }
 		}
         //クリアしたらスコアシーンに遷移する
-        if(clear == 2) {
+        if(clear == 5) {
             SceneManager.LoadScene("ScoreScene");
         }
 	}

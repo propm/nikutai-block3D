@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {    
-    public static int time = 100;
+    public static int time = 250;
+    public static int startTime = 250;
     public Ball ball;
     bool started = true;
 

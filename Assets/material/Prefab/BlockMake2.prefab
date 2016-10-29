@@ -43,6 +43,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: /data/2.csv
   StandardBlock: {fileID: 160504, guid: 50d276250120342b990e8ece21399944, type: 2}
+  Block: {fileID: 0}
 --- !u!114 &11421894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,6 +55,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab03540b1dfac434caff753a3ce7b98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AddScore: 500
+  FeverAddScore: 750
+  thisBlock: {fileID: 0}
+  block: {fileID: 0}
+  materiale: {fileID: 0}
+  prefab: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

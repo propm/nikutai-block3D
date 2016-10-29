@@ -12,7 +12,7 @@ public class Button : MonoBehaviour {
         MainGameData.SetScore(0);
         MainGameData.SetFever(0);
         MainGameData.isFever = false;
-        Timer.time = 100;
+        Timer.time = Timer.startTime;
         if (number == 1)
         {
             SceneManager.LoadScene("scene1");

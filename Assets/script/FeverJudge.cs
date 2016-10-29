@@ -34,6 +34,7 @@ public class FeverJudge : MonoBehaviour {
 		}
 		if (FeverCount >= FeverTime) {
 			MainGameData.SetisFever (false);
+            FeverCount = 0;
 		}
 
 	}
