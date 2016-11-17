@@ -16,41 +16,41 @@ Platform assembly: C:\Users\keigo\Documents\nikutai-block3D\Nikublo_Data\Managed
 Loading C:\Users\keigo\Documents\nikutai-block3D\Nikublo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\keigo\Documents\nikutai-block3D\Nikublo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\keigo\Documents\nikutai-block3D\Nikublo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.060 seconds
+- Completed reload, in  0.181 seconds
 Platform assembly: C:\Users\keigo\Documents\nikutai-block3D\Nikublo_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\keigo\Documents\nikutai-block3D\Nikublo_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.772769 ms
+UnloadTime: 0.888238 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 12e0 -> priority: 1 
+  Thread -> id: 10f8 -> priority: 1 
 The referenced script on this Behaviour (Game Object 'ExplosionSound') is missing!
  
 (Filename:  Line: 1656)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.071249 ms
+UnloadTime: 7.795290 ms
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 469.
-Total: 5.142960 ms (FindLiveObjects: 0.030363 ms CreateObjectMapping: 0.019672 ms MarkObjects: 0.238630 ms  DeleteObjects: 4.847451 ms)
+Total: 6.079539 ms (FindLiveObjects: 0.037633 ms CreateObjectMapping: 0.026514 ms MarkObjects: 0.288239 ms  DeleteObjects: 5.719026 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.238056 ms
+UnloadTime: 1.217105 ms
 
 Unloading 112 unused Assets to reduce memory usage. Loaded Objects now: 276.
-Total: 8.625341 ms (FindLiveObjects: 0.018816 ms CreateObjectMapping: 0.020955 ms MarkObjects: 0.186884 ms  DeleteObjects: 8.398258 ms)
+Total: 8.068561 ms (FindLiveObjects: 0.018816 ms CreateObjectMapping: 0.018816 ms MarkObjects: 0.185602 ms  DeleteObjects: 7.844898 ms)
 
 The referenced script on this Behaviour (Game Object 'ExplosionSound') is missing!
  
 (Filename:  Line: 1656)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.530290 ms
+UnloadTime: 0.464860 ms
 
 Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 469.
-Total: 6.923709 ms (FindLiveObjects: 0.034212 ms CreateObjectMapping: 0.027369 ms MarkObjects: 0.333997 ms  DeleteObjects: 6.526846 ms)
+Total: 5.546254 ms (FindLiveObjects: 0.023093 ms CreateObjectMapping: 0.019244 ms MarkObjects: 0.263862 ms  DeleteObjects: 5.239625 ms)
 
 0-0:0
  
@@ -953,30 +953,30 @@ Total: 6.923709 ms (FindLiveObjects: 0.034212 ms CreateObjectMapping: 0.027369 m
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.633186 ms
+UnloadTime: 8.013393 ms
 
 Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 276.
-Total: 10.882070 ms (FindLiveObjects: 2.414958 ms CreateObjectMapping: 0.033784 ms MarkObjects: 0.201852 ms  DeleteObjects: 8.230618 ms)
+Total: 10.927860 ms (FindLiveObjects: 2.631359 ms CreateObjectMapping: 0.029935 ms MarkObjects: 0.208695 ms  DeleteObjects: 8.056586 ms)
 
 The referenced script on this Behaviour (Game Object 'ExplosionSound') is missing!
  
 (Filename:  Line: 1656)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.505486 ms
+UnloadTime: 0.490092 ms
 
 Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 469.
-Total: 5.652295 ms (FindLiveObjects: 0.032929 ms CreateObjectMapping: 0.022665 ms MarkObjects: 0.271132 ms  DeleteObjects: 5.324285 ms)
+Total: 5.793010 ms (FindLiveObjects: 0.029935 ms CreateObjectMapping: 0.019244 ms MarkObjects: 0.278403 ms  DeleteObjects: 5.464999 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.585029 ms
+UnloadTime: 0.549108 ms
 
 Unloading 112 unused Assets to reduce memory usage. Loaded Objects now: 276.
-Total: 8.365756 ms (FindLiveObjects: 0.026942 ms CreateObjectMapping: 0.019244 ms MarkObjects: 0.193299 ms  DeleteObjects: 8.125415 ms)
+Total: 8.262289 ms (FindLiveObjects: 0.020099 ms CreateObjectMapping: 0.021382 ms MarkObjects: 0.200997 ms  DeleteObjects: 8.018526 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.601708 ms
+UnloadTime: 0.423378 ms
 
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 253.
-Total: 5.519722 ms (FindLiveObjects: 0.025231 ms CreateObjectMapping: 0.017961 ms MarkObjects: 0.174482 ms  DeleteObjects: 5.301192 ms)
+Total: 5.485954 ms (FindLiveObjects: 0.014967 ms CreateObjectMapping: 0.017533 ms MarkObjects: 0.147113 ms  DeleteObjects: 5.305912 ms)
 

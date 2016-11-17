@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {    
-    public static int time = 180;
-    public static int startTime = 180;
+    public static int time = 150;
+    public static int startTime = 150;
     public Ball ball;
     bool started = true;
     public Text finishText;
@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
         {
             if(time == 60)
             {
-                GetComponent<Text>().color = new Color(255,168,0,255);
+                GetComponent<Text>().color = Color.yellow;
                 bgm.clip = fever;
                 bgm.PlayOneShot(bgm.clip);
             }
