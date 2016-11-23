@@ -87,7 +87,7 @@ public class Ball : MonoBehaviour
         {
             float lag = transform.position.x - paddle.transform.position.x;
             v.x = lag * 6;
-            if((lag <= 2)&&(lag >= -2)) { v.z = 35f; }
+            if((lag <= 2)&&(lag >= -2)) { v.z = 33f; }
             rb.velocity = v;    // 値を反映.
         }
     }
