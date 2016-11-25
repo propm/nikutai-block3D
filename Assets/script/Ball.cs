@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject feverParticle;
+    public GameObject speedUpParticle;
 
     public float ballInitialVelocity = 600f;
     bool started = false;
@@ -20,6 +21,12 @@ public class Ball : MonoBehaviour
     private bool ballInPlay;
     public AudioSource audio;
 
+    float zSpeed = 30;
+    float lagger = 6;
+
+    float speedCounter = 0;
+    bool fwaiting, swaiting = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -32,10 +39,32 @@ public class Ball : MonoBehaviour
         {        //ボールが動いていなかったら再びカウントダウンからのスタート
             StartCoroutine("Countdown");
         }
-        if (MainGameData.GetisFever() == true)
+
+        //フィーバーのパーティクル処理
+        if (MainGameData.GetisFever() && !fwaiting)
         {
-            Vector3 particlePosition = this.transform.position;
-            GameObject ob = (GameObject)Instantiate(feverParticle, particlePosition, Quaternion.identity);
+            GameObject ob = (GameObject)Instantiate(feverParticle, transform.position, Quaternion.identity);
+            StartCoroutine(Wait(fwaiting, ob, 0.02f, 1));
+        }
+
+        //スピードアップゲット時の処理
+        if (MainGameData.SpeedUp && !swaiting)
+        {
+            speedCounter += Time.deltaTime;
+            zSpeed = 45;
+            lagger = 8;
+            GameObject ob = (GameObject)Instantiate(speedUpParticle, transform.position, Quaternion.identity);
+            StartCoroutine(Wait(swaiting, ob, 0.02f, 2));
+        }
+        else
+        {
+            zSpeed = 30;
+            lagger = 6;
+        }
+        if(speedCounter >= 10)
+        {
+            MainGameData.SpeedUp = false;
+            speedCounter = 0;
         }
     }
 
@@ -64,13 +93,13 @@ public class Ball : MonoBehaviour
         {
             Vector3 v = rb.velocity;    // 速度を取得.
             
-            if (-30.0f < v.z && v.z <= 0.0f)
+            if (-zSpeed < v.z && v.z <= 0)
             {                                           // Zの速度が-30～0なら.
-                v.z = -30.0f;                           // Zの値を -30.0f に.
+                v.z = -zSpeed;                           // Zの値を -30.0f に.
             }
-            else if (0.0f < v.z && v.z < 30.0f)
+            else if (0 < v.z && v.z < zSpeed)
             {                                           // Zの速度が0～30なら
-                v.z = 30.0f;                            // Zの値を +20.0f に.
+                v.z = zSpeed;                            // Zの値を +30.0f に.
             }
 
             rb.velocity = v;    // 値を反映.
@@ -86,8 +115,8 @@ public class Ball : MonoBehaviour
         if (collision.transform.name == "Paddle")
         {
             float lag = transform.position.x - paddle.transform.position.x;
-            v.x = lag * 6;
-            if((lag <= 2)&&(lag >= -2)) { v.z = 33f; }
+            v.x = lag * lagger;
+            if((lag <= 2)&&(lag >= -2)) { v.z = zSpeed*1.1f; }
             rb.velocity = v;    // 値を反映.
         }
     }
@@ -116,6 +145,15 @@ public class Ball : MonoBehaviour
         rb.isKinematic = false;
         rb.AddForce(new Vector3(0, 0, ballInitialVelocity * (-1.5f)));
         started = true;
+    }
+    IEnumerator Wait(bool waiting ,GameObject ob, float per, float dest)
+    {
+        waiting = true;
+        yield return new WaitForSeconds(per);
+        waiting = false;
+        yield return new WaitForSeconds(dest);
+        Destroy(ob);
+
     }
     public bool Getactive() { return activegetter; }
 }

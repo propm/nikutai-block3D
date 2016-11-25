@@ -12,8 +12,13 @@ public class Timer : MonoBehaviour
     public Text finishText;
     public AudioSource audio;
     public AudioSource bgm;
-    public AudioClip fever;
     bool b = true;
+    int speedItem = Random.Range(20, 25+1);
+    public GameObject SpeedUp;
+    bool obMove;
+    public GameObject particle;
+
+    int[] i = new int[3] { 1,1,1};
 
     void Start()
     {
@@ -33,11 +38,15 @@ public class Timer : MonoBehaviour
     {
         while (time > -1)
         {
-            if(time == 60)
+            if(time == startTime-speedItem*i[0])
+            {
+                i[0]++;
+                Vector3 particlePosition = new Vector3(Random.Range(-20, 21), 0.5f, 4);
+                GameObject ob = (GameObject)Instantiate(SpeedUp, particlePosition, Quaternion.identity);
+            }
+            if (time == 60)
             {
                 GetComponent<Text>().color = Color.yellow;
-                bgm.clip = fever;
-                bgm.PlayOneShot(bgm.clip);
             }
             if(time == 10) {
                 GetComponent<Text>().color = Color.red;

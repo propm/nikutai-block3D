@@ -8,10 +8,6 @@ public class Paddle : MonoBehaviour
     private double rate;
     private float position;
 	private Vector3 playerPos = new Vector3(0, 1f, -25f);
-    bool plus, minus = false;
-    bool plussaki = false;
-    bool b = true;
-    float zahyou1, zahyou2, delta;
 
     void Start()
     {
@@ -20,10 +16,12 @@ public class Paddle : MonoBehaviour
 
     void Update()
 	{
-        /*実際プレイする範囲を100～-100として、座標は大きめにとるようにする*/
+        /*
+        実際プレイする範囲を100～-100として、座標は大きめにとるようにする
         rate = (Socket.Data + 100)/200.0;
         float xPos = (float)((50 * rate + (-25))*(-1));
-        /*100 - -25  0 - 25  110 -30→-25*/
+        /*100 - -25  0 - 25  110 -30→-25
+        
         if(xPos >= 25f)
         {
             xPos = 25f;
@@ -31,14 +29,15 @@ public class Paddle : MonoBehaviour
         if(xPos <= -25)
         {
             xPos = -25f;
-        }
-
-        /*
+        }*/
+        
+        
+        
         Vector3 mPosition = Input.mousePosition;
 		float xPos = transform.position.x + (Input.GetAxis("Horizontal") * paddleSpeed);
 		playerPos = new Vector3(Mathf.Clamp(xPos, -25f, 25f), 1f, -25f);
 		transform.position = playerPos;
-        */
+        
     }
 
     void OnApplicationQuit()

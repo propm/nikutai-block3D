@@ -10,6 +10,7 @@ public class MainGameData : MonoBehaviour {
 	public static int MaxFever = 50; //フィーバーゲージの最大値
 	public static bool BallInPlay = false;
     public static int highScore = 0;
+    public static bool SpeedUp = false;
 
 	public static int GetScore(){
 		return Score;
@@ -43,6 +44,7 @@ public class MainGameData : MonoBehaviour {
 	public static void SetBallInPlay(bool b){
 		BallInPlay = b;
 	}
+
 		
 	// Use this for initialization
 	void Start () {

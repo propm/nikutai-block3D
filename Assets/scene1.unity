@@ -1946,6 +1946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
   feverParticle: {fileID: 158102, guid: 798b32b4b3305f846a02668e727badc9, type: 2}
+  speedUpParticle: {fileID: 100006, guid: 0438351a6e6422d43a09930e9be00ee9, type: 2}
   ballInitialVelocity: 1000
   restart: 1
   count: 3
@@ -1981,7 +1982,7 @@ GameObject:
   - 114: {fileID: 1304563962}
   m_Layer: 0
   m_Name: Paddle
-  m_TagString: Particle
+  m_TagString: Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2295,7 +2296,8 @@ MonoBehaviour:
   finishText: {fileID: 60384631}
   audio: {fileID: 151646562}
   bgm: {fileID: 1809800476}
-  fever: {fileID: 8300000, guid: de61ad4e30d334a41970cd554d46480e, type: 3}
+  SpeedUp: {fileID: 1000010900210456, guid: c6a341d7efa715043b25ca0560a29a2a, type: 2}
+  particle: {fileID: 158102, guid: 9319ea0e9816fcb4e816769a6d8c6023, type: 2}
 --- !u!1 &1774397736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,7 +2732,7 @@ GameObject:
   - 81: {fileID: 2083623582}
   m_Layer: 0
   m_Name: "\u4FEF\u77B0\u30AB\u30E1\u30E9"
-  m_TagString: Untagged
+  m_TagString: Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

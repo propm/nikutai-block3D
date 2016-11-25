@@ -86,6 +86,7 @@
     <Compile Include="Assets\script\Play.cs" />
     <Compile Include="Assets\script\ScoreView.cs" />
     <Compile Include="Assets\script\Socket.cs" />
+    <Compile Include="Assets\script\SpeedUp.cs" />
     <Compile Include="Assets\script\Timer.cs" />
     <Compile Include="Assets\script\result.cs" />
   </ItemGroup>
