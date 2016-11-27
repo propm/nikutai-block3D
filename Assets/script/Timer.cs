@@ -13,12 +13,16 @@ public class Timer : MonoBehaviour
     public AudioSource audio;
     public AudioSource bgm;
     bool b = true;
-    int speedItem = Random.Range(20, 25+1);
+    int speedItem = Random.Range(startTime-30, startTime -20);
+    int ballItem = Random.Range(startTime - 40, startTime - 30);
+    int feverItem = Random.Range(startTime - 50, startTime - 10);
     public GameObject SpeedUp;
+    public GameObject BigBall;
+    public GameObject PlusFever;
     bool obMove;
     public GameObject particle;
 
-    int[] i = new int[3] { 1,1,1};
+    Vector3 itemPosition = new Vector3(Random.Range(-20, 21), 0.5f, 4);
 
     void Start()
     {
@@ -38,11 +42,20 @@ public class Timer : MonoBehaviour
     {
         while (time > -1)
         {
-            if(time == startTime-speedItem*i[0])
+            if(time == speedItem)
             {
-                i[0]++;
-                Vector3 particlePosition = new Vector3(Random.Range(-20, 21), 0.5f, 4);
-                GameObject ob = (GameObject)Instantiate(SpeedUp, particlePosition, Quaternion.identity);
+                speedItem = Random.Range(time-30, time-20);
+                GameObject ob = (GameObject)Instantiate(SpeedUp, itemPosition, Quaternion.identity);
+            }
+            if (time == ballItem)
+            {
+                ballItem = Random.Range(time - 30, time - 20);
+                GameObject ob = (GameObject)Instantiate(BigBall, itemPosition, Quaternion.identity);
+            }
+            if(time == feverItem)
+            {
+                feverItem = Random.Range(time - 50, time - 10);
+                GameObject ob = (GameObject)Instantiate(PlusFever, itemPosition, Quaternion.identity);
             }
             if (time == 60)
             {

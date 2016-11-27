@@ -11,6 +11,8 @@ public class MainGameData : MonoBehaviour {
 	public static bool BallInPlay = false;
     public static int highScore = 0;
     public static bool SpeedUp = false;
+    public static bool BigBall = false;
+    public static bool PlusFever = false;
 
 	public static int GetScore(){
 		return Score;

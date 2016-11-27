@@ -2057,7 +2057,7 @@ Transform:
   m_GameObject: {fileID: 1304563961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 1, z: -25}
-  m_LocalScale: {x: 14, y: 2, z: 1}
+  m_LocalScale: {x: 14, y: 6, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2299,6 +2299,8 @@ MonoBehaviour:
   audio: {fileID: 151646562}
   bgm: {fileID: 1809800476}
   SpeedUp: {fileID: 1000010900210456, guid: c6a341d7efa715043b25ca0560a29a2a, type: 2}
+  BigBall: {fileID: 1000013713406040, guid: 37d52dc52c26cb645b80ef7fc5d1ce2c, type: 2}
+  PlusFever: {fileID: 1000014122907420, guid: a334091310662624f90bf254c6766d2a, type: 2}
   particle: {fileID: 158102, guid: 9319ea0e9816fcb4e816769a6d8c6023, type: 2}
 --- !u!1 &1774397736
 GameObject:

@@ -25,6 +25,8 @@ public class Ball : MonoBehaviour
     float lagger = 6;
 
     float speedCounter = 0;
+    float ballCounter = 0;
+
     bool fwaiting, swaiting = false;
 
     public Material smaterial;
@@ -50,7 +52,7 @@ public class Ball : MonoBehaviour
             StartCoroutine(Wait(fwaiting, ob, 0.02f, 1));
         }
 
-        //スピードアップゲット時の処理
+        //アイテムゲット時の処理(スピードアップ)
         if (MainGameData.SpeedUp && !swaiting)
         {
             speedCounter += Time.deltaTime;
@@ -71,6 +73,28 @@ public class Ball : MonoBehaviour
             MainGameData.SpeedUp = false;
             speedCounter = 0;
             GetComponent<Renderer>().material = nmaterial;
+        }
+
+        //アイテムゲット時の処理(ビッグボール)
+        if (MainGameData.BigBall)
+        {
+            ballCounter += Time.deltaTime;
+            transform.position = new Vector3(transform.position.x, 3.5f, transform.position.z);
+            transform.localScale = new Vector3(6, 6, 6);
+        }
+        if(ballCounter >= 10)
+        {
+            MainGameData.BigBall = false;
+            ballCounter = 0;
+            transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+            transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+        }
+
+        //アイテムゲット時の処理(プラスフィーバー)
+        if (MainGameData.PlusFever)
+        {
+            MainGameData.PlusFever = false;
+            MainGameData.SetFever(MainGameData.GetFever() + 8);
         }
     }
 

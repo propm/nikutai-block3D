@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Assets\script\Ball.cs" />
     <Compile Include="Assets\script\BallOut.cs" />
+    <Compile Include="Assets\script\BigBall.cs" />
     <Compile Include="Assets\script\Block.cs" />
     <Compile Include="Assets\script\BlockMaker.cs" />
     <Compile Include="Assets\script\BlockReader.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\script\MovieOnUI.cs" />
     <Compile Include="Assets\script\Paddle.cs" />
     <Compile Include="Assets\script\Play.cs" />
+    <Compile Include="Assets\script\PlusFever.cs" />
     <Compile Include="Assets\script\ScoreView.cs" />
     <Compile Include="Assets\script\Socket.cs" />
     <Compile Include="Assets\script\SpeedUp.cs" />
