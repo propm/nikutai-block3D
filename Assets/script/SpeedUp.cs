@@ -18,7 +18,7 @@ public class SpeedUp : MonoBehaviour {
         }
     }
 
-    void OnCollisionEnter(Collision trigger)
+    void OnTriggerEnter(Collider trigger)
     {
         if (trigger.gameObject.tag == "Paddle")
         {

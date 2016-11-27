@@ -42,7 +42,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -1953,6 +1953,8 @@ MonoBehaviour:
   countdown: {fileID: 1009775467}
   paddle: {fileID: 1304563962}
   audio: {fileID: 557436624}
+  smaterial: {fileID: 2100000, guid: d84e6a3277455554f8010f0f47c8ae73, type: 2}
+  nmaterial: {fileID: 2100000, guid: 4f0374a369465ab43b2797f578b43709, type: 2}
 --- !u!54 &1223017461
 Rigidbody:
   m_ObjectHideFlags: 0

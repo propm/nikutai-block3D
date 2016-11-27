@@ -27,6 +27,9 @@ public class Ball : MonoBehaviour
     float speedCounter = 0;
     bool fwaiting, swaiting = false;
 
+    public Material smaterial;
+    public Material nmaterial;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -53,6 +56,8 @@ public class Ball : MonoBehaviour
             speedCounter += Time.deltaTime;
             zSpeed = 45;
             lagger = 8;
+            GetComponent<Renderer>().material = smaterial;
+            GetComponent<Renderer>().material.SetColor("_TintColor", Color.red);
             GameObject ob = (GameObject)Instantiate(speedUpParticle, transform.position, Quaternion.identity);
             StartCoroutine(Wait(swaiting, ob, 0.02f, 2));
         }
@@ -65,6 +70,7 @@ public class Ball : MonoBehaviour
         {
             MainGameData.SpeedUp = false;
             speedCounter = 0;
+            GetComponent<Renderer>().material = nmaterial;
         }
     }
 
