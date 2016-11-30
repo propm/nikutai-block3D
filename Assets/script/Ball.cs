@@ -32,6 +32,8 @@ public class Ball : MonoBehaviour
     public Material smaterial;
     public Material nmaterial;
 
+    float y = 1;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -79,23 +81,17 @@ public class Ball : MonoBehaviour
         if (MainGameData.BigBall)
         {
             ballCounter += Time.deltaTime;
-            transform.position = new Vector3(transform.position.x, 3.5f, transform.position.z);
+            y = 3.5f;
             transform.localScale = new Vector3(6, 6, 6);
         }
         if(ballCounter >= 10)
         {
             MainGameData.BigBall = false;
             ballCounter = 0;
-            transform.position = new Vector3(transform.position.x, 1, transform.position.z);
-            transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+            y = 1;
+            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
         }
-
-        //アイテムゲット時の処理(プラスフィーバー)
-        if (MainGameData.PlusFever)
-        {
-            MainGameData.PlusFever = false;
-            MainGameData.SetFever(MainGameData.GetFever() + 8);
-        }
+        transform.position = new Vector3(transform.position.x, y, transform.position.z);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -146,7 +142,7 @@ public class Ball : MonoBehaviour
         {
             float lag = transform.position.x - paddle.transform.position.x;
             v.x = lag * lagger;
-            if((lag <= 2)&&(lag >= -2)) { v.z = zSpeed*1.1f; }
+            if((lag <= 2)&&(lag >= -2)) { v.z = zSpeed*1.2f; }
             rb.velocity = v;    // 値を反映.
         }
     }

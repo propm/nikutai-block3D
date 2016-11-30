@@ -12,9 +12,13 @@ public class MainGameData : MonoBehaviour {
     public static int highScore = 0;
     public static bool SpeedUp = false;
     public static bool BigBall = false;
-    public static bool PlusFever = false;
 
-	public static int GetScore(){
+    public static bool bigBallSound = false;
+    public static bool plusFeverSound = false;
+    public static bool speedUpSound = false;
+
+
+    public static int GetScore(){
 		return Score;
 	}
 	public static void SetScore(int s){

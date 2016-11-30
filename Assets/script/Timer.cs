@@ -12,6 +12,10 @@ public class Timer : MonoBehaviour
     public Text finishText;
     public AudioSource audio;
     public AudioSource bgm;
+
+    public AudioSource bigBallSound;
+    public AudioSource plusFeverSound;
+    public AudioSource speedUpSpund;
     bool b = true;
     int speedItem = Random.Range(startTime-30, startTime -20);
     int ballItem = Random.Range(startTime - 40, startTime - 30);
@@ -36,6 +40,21 @@ public class Timer : MonoBehaviour
             StartCoroutine("timer");
             started = false;
      }
+        if (MainGameData.bigBallSound)
+        {
+            MainGameData.bigBallSound = false;
+            bigBallSound.PlayOneShot(bigBallSound.clip);
+        }
+        if (MainGameData.plusFeverSound)
+        {
+            MainGameData.plusFeverSound = false;
+            bigBallSound.PlayOneShot(plusFeverSound.clip);
+        }
+        if (MainGameData.speedUpSound)
+        {
+            MainGameData.speedUpSound = false;
+            bigBallSound.PlayOneShot(speedUpSpund.clip);
+        }
     }
 
     IEnumerator timer()
@@ -44,16 +63,19 @@ public class Timer : MonoBehaviour
         {
             if(time == speedItem)
             {
+                Vector3 itemPosition = new Vector3(Random.Range(-20, 21), 0.5f, 4);
                 speedItem = Random.Range(time-30, time-20);
                 GameObject ob = (GameObject)Instantiate(SpeedUp, itemPosition, Quaternion.identity);
             }
             if (time == ballItem)
             {
+                Vector3 itemPosition = new Vector3(Random.Range(-20, 21), 0.5f, 4);
                 ballItem = Random.Range(time - 30, time - 20);
                 GameObject ob = (GameObject)Instantiate(BigBall, itemPosition, Quaternion.identity);
             }
             if(time == feverItem)
             {
+                Vector3 itemPosition = new Vector3(Random.Range(-20, 21), 0.5f, 4);
                 feverItem = Random.Range(time - 50, time - 10);
                 GameObject ob = (GameObject)Instantiate(PlusFever, itemPosition, Quaternion.identity);
             }
@@ -72,7 +94,6 @@ public class Timer : MonoBehaviour
             StartCoroutine("Clear");
             b = false;
         }
-
     }
     IEnumerator Clear()
     {

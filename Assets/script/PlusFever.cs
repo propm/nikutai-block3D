@@ -25,7 +25,8 @@ public class PlusFever : MonoBehaviour
     {
         if (trigger.gameObject.tag == "Paddle")
         {
-            MainGameData.PlusFever = true;
+            MainGameData.plusFeverSound = true;
+            MainGameData.SetFever(MainGameData.GetFever() + 10);
             Destroy(this.gameObject);
         }
     }

@@ -25,6 +25,7 @@ public class BigBall : MonoBehaviour
     {
         if (trigger.gameObject.tag == "Paddle")
         {
+            MainGameData.bigBallSound = true;
             MainGameData.BigBall = true;
             Destroy(this.gameObject);
         }

@@ -22,6 +22,7 @@ public class SpeedUp : MonoBehaviour {
     {
         if (trigger.gameObject.tag == "Paddle")
         {
+            MainGameData.speedUpSound = true;
             MainGameData.SpeedUp = true;
             Destroy(this.gameObject);
         }

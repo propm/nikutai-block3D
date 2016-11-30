@@ -16,11 +16,10 @@ public class Paddle : MonoBehaviour
 
     void Update()
 	{
-        /*
-        実際プレイする範囲を100～-100として、座標は大きめにとるようにする
+        
+        /*実際プレイする範囲を100～-100として、座標は大きめにとるようにする
         rate = (Socket.Data + 100)/200.0;
         float xPos = (float)((50 * rate + (-25))*(-1));
-        /*100 - -25  0 - 25  110 -30→-25
         
         if(xPos >= 25f)
         {
@@ -32,9 +31,9 @@ public class Paddle : MonoBehaviour
         }*/
         
         
-        
         Vector3 mPosition = Input.mousePosition;
 		float xPos = transform.position.x + (Input.GetAxis("Horizontal") * paddleSpeed);
+        
 		playerPos = new Vector3(Mathf.Clamp(xPos, -25f, 25f), 1f, -25f);
 		transform.position = playerPos;
         
