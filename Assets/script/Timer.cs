@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {    
-    public static int time = 150;
-    public static int startTime = 150;
+    public static int time = 90;
+    public static int startTime = 90;
     public Ball ball;
     bool started = true;
     public Text finishText;
@@ -17,9 +17,9 @@ public class Timer : MonoBehaviour
     public AudioSource plusFeverSound;
     public AudioSource speedUpSpund;
     bool b = true;
-    int speedItem = Random.Range(startTime-30, startTime -20);
-    int ballItem = Random.Range(startTime - 40, startTime - 30);
-    int feverItem = Random.Range(startTime - 50, startTime - 10);
+    int speedItem;
+    int ballItem;
+    int feverItem;
     public GameObject SpeedUp;
     public GameObject BigBall;
     public GameObject PlusFever;
@@ -30,7 +30,9 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-
+        speedItem = Random.Range(startTime - 30, startTime - 20);
+        ballItem = Random.Range(startTime - 40, startTime - 30);
+        feverItem = Random.Range(startTime - 50, startTime - 10);
     }
 
     void Update()
@@ -39,7 +41,7 @@ public class Timer : MonoBehaviour
       {
             StartCoroutine("timer");
             started = false;
-     }
+      }
         if (MainGameData.bigBallSound)
         {
             MainGameData.bigBallSound = false;
@@ -79,7 +81,7 @@ public class Timer : MonoBehaviour
                 feverItem = Random.Range(time - 50, time - 10);
                 GameObject ob = (GameObject)Instantiate(PlusFever, itemPosition, Quaternion.identity);
             }
-            if (time == 60)
+            if (time == 30)
             {
                 GetComponent<Text>().color = Color.yellow;
             }

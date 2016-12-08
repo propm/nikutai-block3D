@@ -24,8 +24,8 @@ public class Ball : MonoBehaviour
     float zSpeed = 30;
     float lagger = 6;
 
-    float speedCounter = 0;
-    float ballCounter = 0;
+    public static float speedCounter = 0;
+    public static float ballCounter = 0;
 
     bool fwaiting, swaiting = false;
 

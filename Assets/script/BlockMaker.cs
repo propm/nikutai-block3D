@@ -29,7 +29,7 @@ public class BlockMaker : MonoBehaviour {
 	void Update () {
 		Child = transform.childCount;
 		if (Child <= 0) {
-            if (clear >= 4)
+            if (clear >= 3)
             {
                 clear++;
             }else{
@@ -40,7 +40,7 @@ public class BlockMaker : MonoBehaviour {
             }
 		}
         //クリアしたらスコアシーンに遷移する
-        if((clear == 5)&&(b)) {
+        if((clear == 4)&&(b)) {
             StartCoroutine("Clear");
             b = false;
         }

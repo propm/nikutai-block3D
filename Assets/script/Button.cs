@@ -12,8 +12,12 @@ public class Button : MonoBehaviour {
         MainGameData.SetScore(0);
         MainGameData.SetFever(0);
         MainGameData.isFever = false;
+        MainGameData.BigBall = false;
+        MainGameData.SpeedUp = false;
         Timer.time = Timer.startTime;
         Time.timeScale = 1;
+        Ball.speedCounter = 0;
+        Ball.ballCounter = 0;
         if (number == 1)
         {
             SceneManager.LoadScene("scene1");

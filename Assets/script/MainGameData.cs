@@ -51,6 +51,11 @@ public class MainGameData : MonoBehaviour {
 		BallInPlay = b;
 	}
 
+    public static void Reset()
+    {
+
+    }
+
 		
 	// Use this for initialization
 	void Start () {
