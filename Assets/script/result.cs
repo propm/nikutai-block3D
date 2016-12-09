@@ -7,7 +7,7 @@ public class result : MonoBehaviour {
     public Text highScoreText;
 
 	void Start () {
-        int score = MainGameData.GetScore() + (Timer.time * 200);
+        int score = MainGameData.GetScore() + (Timer.time+1 * 200);
 
         this.GetComponent<Text>().text = "Score:" + score.ToString();
         if (score > MainGameData.highScore) {

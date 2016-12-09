@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Button : MonoBehaviour {
-    public int number; 
+    public int number;
+    public Text loading;
     // ボタンをクリックした時の処理
     public void ButtonPush()
     {
+        loading.text = "loading...";
         Application.LoadLevel("scene1");
         Application.LoadLevel("ScoreScene");
         MainGameData.SetScore(0);
